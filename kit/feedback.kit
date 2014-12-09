@@ -1,0 +1,56 @@
+<!-- $title = Контакты -->
+<!-- $class-page = page -->
+
+<!-- @include "inc/_header-ie8.kit"-->
+<!-- @include "inc/_page__header.kit"-->
+<!-- @include "inc/_sidebar.kit"-->
+
+<!-- begin content__main -->
+<div class="content__main">
+	<!-- begin content__block -->
+	<div class="content__block">
+		<!-- begin feedback -->
+		<div class="feedback">
+			<div class="feedback__title"><span class="feedback__title-span">У вас интересный проект? Напишите мне</span></div>
+			<div class="feedback__form">
+				<form>
+					<div class="feedback__form-row">
+						<div class="container-input">
+							<span class="span-label">Имя</span>
+							<input class="input input--name" type="text" name="name" placeholder="Как к Вам обращаться" required />
+						</div>
+						<div class="container-input container-input--email">
+							<span class="span-label">Email</span>
+							<input class="input input--email" type="text" name="email" placeholder="Куда мне писать" required />
+						</div>
+					</div>
+					<div class="feedback__form-row">
+						<div class="container-input">
+							<span class="span-label">Сообщение</span>
+							<textarea class="textarea" name="message" placeholder="Кратко в чем суть"></textarea>
+						</div>
+					</div>
+					<div class="feedback__form-row">
+						<div class="container-input">
+							<span class="span-label">Введите код, указанный на картинке</span>
+							<div class="captcha">
+								<div class="captcha__img"><img src="images/content/captcha.jpg" width="146" height="46"></div>
+								<input class="input input--captcha" type="text" name="captcha" placeholder="Введите код" required />
+							</div>
+						</div>
+					</div>
+					<div class="feedback__form-row">
+						<input class="button button--shadow" type="submit" value="Отправить">
+						<input class="button button--dark" type="reset" value="Очистить">
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- end feedback -->
+	</div>
+	<!-- end content__block -->
+</div>
+<!-- end content__main -->
+
+<!-- @include "inc/_page__footer.kit"-->
+<!-- @include "inc/_footer.kit"-->

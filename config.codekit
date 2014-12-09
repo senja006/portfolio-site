@@ -11,6 +11,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/contacts.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacts.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/local\/dest\/local.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/local\/dest\/local.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/local\/dest\/local.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/local\/dest\/local.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/local\/src\/sprite.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -25,6 +52,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/local\/src\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/vendor\/dest\/vendor.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/vendor\/dest\/vendor.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -49,6 +85,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/images\/content\/captcha.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3603,
+		"inputAbbreviatedPath": "\/images\/content\/captcha.jpg",
+		"outputAbbreviatedPath": "\/images\/content\/captcha.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/content\/photo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -56,6 +103,17 @@
 		"initialSize": 10059,
 		"inputAbbreviatedPath": "\/images\/content\/photo.jpg",
 		"outputAbbreviatedPath": "\/images\/content\/photo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/content\/work.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10844,
+		"inputAbbreviatedPath": "\/images\/content\/work.jpg",
+		"outputAbbreviatedPath": "\/images\/content\/work.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -104,13 +162,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-2x-sc72c5bba53.png": {
+	"\/images\/design\/sprite-images-2x-se7eb071b69.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-sc72c5bba53.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-sc72c5bba53.png",
+		"initialSize": 38516,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-se7eb071b69.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-se7eb071b69.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -122,6 +180,17 @@
 		"initialSize": 1085,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-briefcase-2x.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-briefcase-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-close-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1251,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -203,6 +272,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images-2x\/icon-mountains-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1360,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-mountains-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-mountains-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images-2x\/icon-phone-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -247,6 +327,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images-2x\/icon-upload-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1782,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-upload-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-upload-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images-2x\/icon-vk-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -269,13 +360,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-s2b71472cbc.png": {
+	"\/images\/design\/sprite-images-s4b94cd0f62.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9161,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s2b71472cbc.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s2b71472cbc.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s4b94cd0f62.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s4b94cd0f62.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -287,6 +378,17 @@
 		"initialSize": 713,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-briefcase.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-briefcase.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 771,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-close.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-close.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -368,6 +470,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images\/icon-mountains.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 698,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-mountains.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-mountains.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images\/icon-phone.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -408,6 +521,17 @@
 		"initialSize": 1157,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-tw.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-tw.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-upload.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1057,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-upload.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-upload.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -454,6 +578,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/js\/local\/src\/popup.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/local\/src\/popup.js",
+		"outputAbbreviatedPath": "\/js\/local\/src\/min\/popup-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/js\/local\/src\/validationForm.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -471,6 +606,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/script.js",
 		"outputAbbreviatedPath": "\/js\/min\/script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/js\/vendor\/dest\/vendor.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/dest\/vendor.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/dest\/min\/vendor-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/js\/vendor\/dest\/vendor.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/vendor\/dest\/vendor.min.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/dest\/min\/vendor.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -541,6 +698,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
+		},
+	"\/kit\/contacts.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/contacts.kit",
+		"outputAbbreviatedPath": "\/contacts.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/inc\/_button-input.kit": {
 		"fileType": 2048,
@@ -738,6 +904,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/work.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/work.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [

@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Яркевич Сергей</title>
+	<title>Контакты</title>
 	<link rel="stylesheet" href="css/vendor/src/reset.css">
 	<link rel="stylesheet" href="css/local/src/style.css" >
 	<link rel="stylesheet" href="css/local/src/sprite.css" />
@@ -31,7 +31,7 @@
 	<div class="social">
 		<ul class="social__ul">
 			<li class="social__li">
-				<a href="http://vk.com/id130461439" target="_blank" class="social__a social__a--vk">
+				<a href="#" class="social__a social__a--vk">
 					<div class="social__front"><span class="icon"></span></div>
 					<div class="social__back"><span class="icon"></span></div>
 				</a>
@@ -49,7 +49,7 @@
 				</a>
 			</li>
 			<li class="social__li">
-				<a href="https://github.com/senja006" target="_blank" class="social__a social__a--git">
+				<a href="#" class="social__a social__a--git">
 					<div class="social__front"><span class="icon"></span></div>
 					<div class="social__back"><span class="icon"></span></div>
 				</a>
@@ -106,95 +106,44 @@
 <div class="content__main">
 	<!-- begin content__block -->
 	<div class="content__block">
-		<!-- begin info -->
-		<div class="info">
-			<h2 class="content__block-title"><span class="content__block-title-span">Основная информация</span></h2>
-			<div class="info__img"><img src="images/content/photo.jpg" width="200" height="200"></div>
-			<div class="info__text">
-				<ul class="info__text-ul">
-					<li class="info__text-li">
-						<span class="info__text-span"><b>Меня зовут:</b></span>
-						<span class="info__text-span">Яркевич Сергей Сергеевич</span>
-					</li>
-					<li class="info__text-li">
-						<span class="info__text-span"><b>Мой возраст:</b></span>
-						<span class="info__text-span">31 год</span>
-					</li>
-					<li class="info__text-li">
-						<span class="info__text-span"><b>Мой город:</b></span>
-						<span class="info__text-span">ст. Ленинградская, Краснодарский край</span>
-					</li>
-					<li class="info__text-li">
-						<span class="info__text-span"><b>Моя специализация:</b></span>
-						<span class="info__text-span">FRONTEND разработчик</span>
-					</li>
-					<li class="info__text-li">
-						<span class="info__text-span"><b>Ключевые навыки:</b></span>
-						<div class="skills">
-							<ul class="skills__ul">
-								<li class="skills__li"><span class="skills__li-span">html</span></li>
-								<li class="skills__li"><span class="skills__li-span">css</span></li>
-								<li class="skills__li"><span class="skills__li-span">javascript</span></li>
-								<li class="skills__li"><span class="skills__li-span">grunt</span></li>
-								<li class="skills__li"><span class="skills__li-span">git</span></li>
-								<li class="skills__li"><span class="skills__li-span">sass</span></li>
-							</ul>
+		<!-- begin feedback -->
+		<div class="feedback">
+			<div class="feedback__title"><span class="feedback__title-span">У вас интересный проект? Напишите мне</span></div>
+			<div class="feedback__form">
+				<form>
+					<div class="feedback__form-row">
+						<div class="container-input">
+							<span class="span-label">Имя</span>
+							<input class="input input--name" type="text" name="name" placeholder="Как к Вам обращаться" required />
 						</div>
-					</li>
-				</ul>
+						<div class="container-input">
+							<span class="span-label">Email</span>
+							<input class="input input--email" type="text" name="email" placeholder="Куда мне писать" required />
+						</div>
+					</div>
+					<div class="feedback__form-row">
+						<div class="container-input">
+							<span class="span-label">Сообщение</span>
+							<textarea class="textarea" name="message" placeholder="Кратко в чем суть"></textarea>
+						</div>
+					</div>
+					<div class="feedback__form-row">
+						<div class="container-input">
+							<span class="span-label">Введите код, указанный на картинке</span>
+							<div class="captcha">
+								<div class="captcha__img"><img src="images/content/captcha.jpg" width="146" height="46"></div>
+								<input class="input input--captcha" type="text" name="captcha" placeholder="Введите код" required />
+							</div>
+						</div>
+					</div>
+					<div class="feedback__form-row">
+						<input class="button button--shadow" type="submit" value="Отправить">
+						<input class="button button--dark" type="reset" value="Очистить">
+					</div>
+				</form>
 			</div>
 		</div>
-		<!-- end info -->
-	</div>
-	<!-- end content__block -->
-	<!-- begin content__block -->
-	<div class="content__block">
-		<!-- begin about -->
-		<div class="about">
-			<h2 class="content__block-title"><span class="content__block-title-span">Опыт работы</span></h2>
-			<ul class="about__ul">
-				<li class="about__li">
-					<span class="icon icon--briefcase"></span>
-					<div class="about__text">
-						<span class="about__text-title">"ИП Яркевич С.М." - бухгалтер</span>
-						<span class="about__text-span">Июнь 2005 - Сентябрь 2007</span>
-					</div>
-				</li>
-				<li class="about__li">
-					<span class="icon icon--briefcase"></span>
-					<div class="about__text">
-						<span class="about__text-title">"ИП Яркевич С.С." - собственный бизнес</span>
-						<span class="about__text-span">Сентябрь 2007 - Декабрь 2013</span>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<!-- end about -->
-	</div>
-	<!-- end content__block -->
-	<!-- begin content__block -->
-	<div class="content__block">
-		<!-- begin about -->
-		<div class="about">
-			<h2 class="content__block-title"><span class="content__block-title-span">Образование</span></h2>
-			<ul class="about__ul">
-				<li class="about__li">
-					<span class="icon icon--education"></span>
-					<div class="about__text">
-						<span class="about__text-title">КубГУ, экономический факультет</span>
-						<span class="about__text-span">Сентябрь 2000 - Июнь 2005</span>
-					</div>
-				</li>
-				<li class="about__li">
-					<span class="icon icon--doc"></span>
-					<div class="about__text">
-						<span class="about__text-title">Курсы Loftschool.ru</span>
-						<span class="about__text-span">Ноябрь 2014 - по настоящее время</span>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<!-- end about -->
+		<!-- end feedback -->
 	</div>
 	<!-- end content__block -->
 </div>

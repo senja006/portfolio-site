@@ -45,6 +45,12 @@
 .icon--mountains {
 	@include s(icon-mountains);
 }
+.close .icon {
+	@include s(icon-close);
+}
+.icon--upload {
+	@include s(icon-upload);
+}
 
 
 

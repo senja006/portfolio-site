@@ -48,12 +48,47 @@
 					</li>
 				</ul>
 				<div class="work__add">
-					<a href="#" class="work__add-a">
+					<a href="#add-project" class="work__add-a open-popup">
 						<div class="work__add-a-wrapper">
 							<span class="icon icon--mountains"></span>
 							<span class="work__add-span">Добавить проект</span>
 						</div>
 					</a>
+				</div>
+			</div>
+			<div class="popup" id="add-project">
+				<div class="popup__in">
+					<a href="#" class="close"><span class="icon"></span></a>
+					<span class="popup__title">Добавление проекта</span>
+					<div class="popup__form">
+						<form>
+							<div class="container-input">
+								<span class="span-label">Название проекта</span>
+								<input class="input" type="text" name="name" placeholder="Введите название" required />
+							</div>
+							<div class="container-input">
+								<span class="span-label">Картинка проекта</span>
+								<div class="input-file">
+									<input class="input" type="text" name="file" placeholder="Загрузите изображение" disabled="disabled" required />
+									<label class="label__file" for="input__file">
+										<span class="icon icon--upload"></span>
+										<input id="input__file" class="input__file" type="file">
+									</label>
+								</div>
+							</div>
+							<div class="container-input">
+								<span class="span-label">URL проекта</span>
+								<input class="input" type="text" name="url" placeholder="Добавьте ссылку" required />
+							</div>
+							<div class="container-input">
+								<span class="span-label">Описание</span>
+								<textarea class="textarea" name="desc" placeholder="Пара слов о Вашем проекте"></textarea>
+							</div>
+							<div class="container-submit">
+								<input class="button" type="submit" value="Добавить">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
