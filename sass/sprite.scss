@@ -51,6 +51,12 @@
 .icon--upload {
 	@include s(icon-upload);
 }
+.form-info-success .icon {
+	@include s(icon-cross-green);
+}
+.form-info-error .icon {
+	@include s(icon-cross-red);
+}
 
 
 

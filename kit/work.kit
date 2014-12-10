@@ -61,15 +61,33 @@
 					<a href="#" class="close"><span class="icon"></span></a>
 					<span class="popup__title">Добавление проекта</span>
 					<div class="popup__form">
-						<form>
+						<form class="form-validation">
+							<div class="form-info">
+								<div class="form-info-in form-info-success">
+									<a href="#" class="form-info-close"><span class="icon"></span></a>
+									<span class="form-info-title">Ура!</span>
+									<span class="form-info-text">Проект успешно добавлен.</span>
+								</div>
+								<div class="form-info-in form-info-error">
+									<a href="#" class="form-info-close"><span class="icon"></span></a>
+									<span class="form-info-title">Ошибка!</span>
+									<span class="form-info-text">Невозможно добавить проект.</span>
+								</div>
+							</div>
 							<div class="container-input">
 								<span class="span-label">Название проекта</span>
-								<input class="input" type="text" name="name" placeholder="Введите название" required />
+								<div class="input-wrapper">
+									<input class="input" type="text" name="name" placeholder="Введите название" required />
+									<div class="tooltip" data-required="введите название"><span class="tooltip__span"></span></div>
+								</div>
 							</div>
 							<div class="container-input">
 								<span class="span-label">Картинка проекта</span>
 								<div class="input-file">
-									<input class="input" type="text" name="file" placeholder="Загрузите изображение" disabled="disabled" required />
+									<div class="input-wrapper">
+										<input class="input input__file-name" type="text" name="file-name" placeholder="Загрузите изображение" readonly required />
+										<div class="tooltip"data-required="изображение"><span class="tooltip__span"></span></div>
+									</div>
 									<label class="label__file" for="input__file">
 										<span class="icon icon--upload"></span>
 										<input id="input__file" class="input__file" type="file">
@@ -78,11 +96,17 @@
 							</div>
 							<div class="container-input">
 								<span class="span-label">URL проекта</span>
-								<input class="input" type="text" name="url" placeholder="Добавьте ссылку" required />
+								<div class="input-wrapper">
+									<input class="input" type="text" name="url" placeholder="Добавьте ссылку" required />
+									<div class="tooltip" data-no-valid="введите правильный URL" data-required="ссылка на проект"><span class="tooltip__span"></span></div>
+								</div>
 							</div>
 							<div class="container-input">
 								<span class="span-label">Описание</span>
-								<textarea class="textarea" name="desc" placeholder="Пара слов о Вашем проекте"></textarea>
+								<div class="input-wrapper">
+									<textarea class="textarea" name="desc" placeholder="Пара слов о Вашем проекте" required></textarea>
+									<div class="tooltip" data-required="введите сообщение"><span class="tooltip__span"></span></div>
+								</div>
 							</div>
 							<div class="container-submit">
 								<input class="button" type="submit" value="Добавить">

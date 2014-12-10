@@ -17,6 +17,8 @@ var popup = (function() {
 		var $this = $(this);
 		var $popup = $this.parents('.popup');
 		$popup.removeClass('is-visible');
+		validationForm.hideAllTooltip();
+		validationForm.hideFormInfo();
 		return false;
 	};
 

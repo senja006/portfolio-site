@@ -180,17 +180,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-2x-se7eb071b69.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 38516,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-se7eb071b69.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-se7eb071b69.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/design\/sprite-images-2x\/icon-briefcase-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -209,6 +198,28 @@
 		"initialSize": 1251,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-2x.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-cross-green-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 447,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-cross-green-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-cross-green-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-cross-red-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 449,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-cross-red-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-cross-red-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -378,17 +389,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-s4b94cd0f62.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s4b94cd0f62.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s4b94cd0f62.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/design\/sprite-images\/icon-briefcase.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -407,6 +407,28 @@
 		"initialSize": 771,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-close.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-close.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-cross-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 346,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-cross-green.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-cross-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-cross-red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 346,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-cross-red.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-cross-red.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

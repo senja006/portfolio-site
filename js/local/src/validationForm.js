@@ -1,48 +1,106 @@
-var validationForm = {
+var validationForm = (function() {
 	// для работы необходимы следующие библиотеки: Jquery.inputmask, Jquery.h5Validate
-	// функция validationForm.formIsSend(form) вызывает сообщение об отпраке формы, в качестве параметра передается текущая форма
 
-	params: {
-		classInputPhone: 'input__phone',
-		classInputLetters: 'input__letters',
-		classInputNumbers: 'input__numbers',
-		classInputEmail: 'input__email',
-		classTextareaLimit: 'textarea__limit',
-		maxLengthTextarea: 200,
-	},
+	var params = {
+		phone: 'input__phone',
+		letters: 'input__letters',
+		numbers: 'input__numbers',
+		email: 'input__email'
+	};
+	var $inputsRequired = null;
+	var $currentForm = null;
 
-	init: function() {
-		if($('form').length && !$('html').hasClass('ie-9') && !$('html').hasClass('ie-8')) {
-			this.addNewMask();
-			this.addMaskPhone();
-			this.addMaskLetters();
-			this.addMaskNumbers();
-			this.addSupportHtml5Attribute();
-			this.onHandler();
+	function addEventListeners() {
+		$('.form-validation').on('submit', controlValidationForm);
+		$('.form-validation').on('focus', '.ui-state-error', hideTooltip);
+		$('.input__file').on('change', addNameFile);
+		$('.form-validation').on('focus', '.input, .textarea', hideFormInfo);
+		$('.form-info-close').on('click', hideFormInfo);
+		$('.button--reset').on('click', hideAllTooltip);
+	};
+
+	function controlAddMask() {
+		addCustomMask();
+		addMaskPhone();
+		addMaskLetters();
+		addMaskNumbers();
+	};
+
+	function controlValidationForm() {
+		$currentForm = $(this);
+		var required = checkRequired();
+		var validEmail = checkEmail();
+		if(!required || !validEmail) {
+			showTooltipRequired();
+			showTooltipNoValid();
+			return false;
 		}
-	},
+		///////////////////////////////
+		showInfoSuccess();
+		return false;
+	};
 
-	onHandler: function() {
-		$('.form-validation').on('submit', this.formSubmit.bind(this));
-		$('.' + this.params.classInputEmail).on('keyup', this.validationEmail);
-		$('input').on('focus', this.eventOnHoverOrCheckedInput);
-		$('input[type="radio"], input[type="checkbox"]').on('change', this.eventOnHoverOrCheckedInput.bind(this));
-		$('.' + this.params.classTextareaLimit).on('keypress', this.checkNumCharInTextarea.bind(this));
-		$('.input__file').on('change', this.addTextInPlaceValue);
-	},
+	function checkRequired() {
+		$inputsRequired = $currentForm.find('.ui-state-error');
+		if($inputsRequired.length) {
+			return false;
+		}else{
+			return true;
+		}
+	};
 
-	addNewMask: function() {
+	function checkEmail() {
+		var $inputEmail = $currentForm.find('.' + params.email);
+		if(!$inputEmail.length) return true;
+		var value = $inputEmail.val();
+		var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    	if (filter.test(value)) {
+	        $inputEmail.removeClass('error');
+	        return true;
+	    }
+	    else {
+	        $inputEmail.addClass('error');
+	        return false;
+	    }
+	};
+
+	function showTooltipRequired() {
+		$inputsRequired.each(function() {
+			var $input = $(this);
+			var $containerInput = $input.parents('.container-input');
+			var $tooltip = $containerInput.find('.tooltip');
+			var text = $tooltip.data('required');
+			var $containerText = $tooltip.find('.tooltip__span');
+			$containerText.text(text);
+			$containerInput.addClass('is-error');
+		});
+	};
+
+	function showTooltipNoValid() {
+		$currentForm.find('.error').each(function() {
+			var $input = $(this);
+			if($input.parents('.is-error').length) return;
+			var $containerInput = $input.parents('.container-input');
+			var $tooltip = $containerInput.find('.tooltip');
+			var text = $tooltip.data('no-valid');
+			var $containerText = $tooltip.find('.tooltip__span');
+			$containerText.text(text);
+			$containerInput.addClass('is-error');
+		});
+	};
+
+	function addCustomMask() {
 		$.extend($.inputmask.defaults.definitions, {
-	        'a': {
+	        'l': {
 	            'validator': "[А-Яа-яA-Za-z ]",
 	            'cardinality': 1,
 	            'prevalidator': null
 	        }
 	    });
-	},
+	};
 
-	addMaskPhone: function() {
-		$('.' + this.params.classInputPhone).inputmask({
+	function addMaskPhone() {
+		$('.form-validation').find('.' + params.phone).inputmask({
 	        'mask': "+7 999 999 99 99",
 	        'showMaskOnHover': false,
 	        'placeholder': '',
@@ -53,149 +111,74 @@ var validationForm = {
 	        	$(this).addClass('error');
 	        },
 	    });
-	},
+	};
 
-	addMaskLetters: function() {
-		$('.' + this.params.classInputLetters).inputmask({
-	        'mask': "a",
+	function addMaskLetters() {
+		$('.form-validation').find('.' + params.letters).inputmask({
+	        'mask': "l",
 	        'repeat': 100,
 	        'placeholder': '',
 	    });
-	},
+	};
 
-	addMaskNumbers: function() {
-		$('.' + this.params.classInputNumbers).inputmask({
+	function addMaskNumbers() {
+		$('.form-validation').find('.' + params.numbers).inputmask({
 	        'mask': '9',
-	        'repeat': 4,
+	        'repeat': 100,
 	        'placeholder': '',
 	    });
-	},
+	};
 
-	validationEmail: function() {
-		var value = $(this).val();
-		var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    	if (filter.test(value)) {
-	        $(this).removeClass('error');
-	    }
-	    else {
-	        $(this).addClass('error');
-	    }
-	},
-
-	addSupportHtml5Attribute: function() {
+	function addSupportRequired() {
 		$('.form-validation').h5Validate();
-	},
+	};
 
-	formSubmit: function(ev) {
-		var $thisForm = $(ev.target);
-		$thisForm.find('.value').each(function() {
-    		if($(this).hasClass('placeholder')) {
-    			$(this).addClass('error');
-    		}else{
-    			$(this).removeClass('error');
-    		}
-    	});
-    	if($thisForm.find('.error').length || $thisForm.find('.ui-state-error').length) {
-    		this.hideInfoMaxLengthInTextarea($thisForm);
-    		this.formIsError($thisForm);
-    		return false;
-    	}
-    	this.hideInfoMaxLengthInTextarea($thisForm);
-    	// следующие две строки удалить в продакшене ////////////////////////////////
-    	// this.formIsSend($thisForm);
-    	// return false;
-	},
+	function hideTooltip() {
+		$(this).parents('.is-error').removeClass('is-error');
+	};
 
-	formIsSend: function(form) {
-		form.find('.form__info-succes').addClass('is-visible');
-	},
+	function hideAllTooltip() {
+		$currentForm.find('.is-error').removeClass('is-error');
+	};
 
-	formIsError: function(form) {
-		var $thisForm = form;
-		$thisForm.find('.form__info-error').addClass('is-visible');
-		this.startCheckFormForRemoveInfoError($thisForm);
-	},
+	function hideFormInfo() {
+		$('.form-info-in').slideUp(300);
+		return false;
+	}
 
-	startCheckFormForRemoveInfoError: function(form) {
-		var $thisForm = form;
-		if($thisForm.find('.form__info-error').hasClass('is-visible')) {
-				var interval = setInterval(function() {
-				if(!$thisForm.find('.error').length && !$thisForm.find('.ui-state-error').length) {
-					$thisForm.find('.form__info-error').removeClass('is-visible');
-					clearInterval(interval);
-				}
-				if(!$thisForm.parents('.popup').hasClass('is-visible')) {
-					clearInterval(interval);
-				}
-			}, 100);
-		}
-	},
+	function addNameFile() {
+		var $inputFile = $(this);
+		var $inputFileName = $inputFile.parents('.container-input').find('.input__file-name');
+		var value = $inputFile.val();
+		var arr = value.split('\\');
+		var name = arr[arr.length - 1];
+		$inputFileName.val(name);
+		hideTooltip.apply($inputFile);
+	};
 
-	clearForm: function(form) {
-		var $form = form;
-		if($form.find('.form__info-succes').hasClass('is-visible')) {
-			this.hideBlockInfo($form);
-		}
-	},
+	function showInfoSuccess() {
+		$currentForm.find('.form-info-success').slideDown(300);
+	};
 
-	hideInfoSuccess: function(form) {
-		$('.form__info-succes').removeClass('is-visible');
-	},
+	function showInfoError() {
+		$currentForm.find('.form-info-error').slideDown(300);
+	};
 
-	checkNumCharInTextarea: function(ev) {
-		var $textarea = $(ev.target);
-		var $form = $textarea.parents('form');
-		var maxLength = this.params.maxLengthTextarea;
-		var textareaValue = $textarea.val();
-		var currentLengt = textareaValue.length;
-		if(currentLengt > maxLength) {
-			textareaValue = textareaValue.substr(0, maxLength);
-			$textarea.val(textareaValue);
-			this.showInfoMaxLengthInTextarea($form);
-		}else{
-			this.hideInfoMaxLengthInTextarea($form);
-		}
-	},
+	return {
+		init: function() {
+			if($('form').length && !$('html').hasClass('ie-9') && !$('html').hasClass('ie-8')) {
+				controlAddMask();
+				addSupportRequired();
+				addEventListeners();
+				hideFormInfo();
+			}
+		},
+		hideAllTooltip: function() {
+			hideAllTooltip();
+		},
+		hideFormInfo: function() {
+			hideFormInfo();
+		},
+	};
 
-	showInfoMaxLengthInTextarea: function(form) {
-		var $form = form;
-		var $textarea = $form.find('.' + this.params.classTextareaLimit);
-		this.hideBlockInfo();
-		$form.find('.form__info-textarea').addClass('is-visible');
-		$textarea.addClass('max-length');
-	},
-
-	hideBlockInfo: function(form) {
-		var $infoIsVisible = $('.form__info').find('.is-visible');
-		$infoIsVisible.removeClass('is-visible');
-	},
-
-	hideInfoMaxLengthInTextarea: function(form) {
-		var $textarea = $('.' + this.params.classTextareaLimit);
-		$('.form__info-textarea').removeClass('is-visible');
-		$textarea.removeClass('max-length');
-	},
-
-	eventOnHoverOrCheckedInput: function() {
-		validationEmail.hideInfoMaxLengthInTextarea();
-		validationEmail.hideBlockInfo();
-		validationForm.startCheckModified($(this));
-	},
-
-	startCheckModified: function(input) {
-		var $input = input;
-		var interval = setInterval(function() {
-			$input.change();
-		}, 100);
-		$input.on('blur', function() {
-			clearInterval(interval);
-		});
-	},
-
-	addTextInPlaceValue: function() {
-		var thisValue = $(this).val();
-		var arr = thisValue.split('\\');
-		var nameFile = arr[arr.length - 1];
-	    $(this).parents('.wrap-input-file').find('.input__file-value').text(nameFile);
-	},
-};
+}());
