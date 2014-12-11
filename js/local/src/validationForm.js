@@ -138,7 +138,9 @@ var validationForm = (function() {
 	};
 
 	function hideAllTooltip() {
-		$currentForm.find('.is-error').removeClass('is-error');
+		if($currentForm) {
+			$currentForm.find('.is-error').removeClass('is-error');
+		}	
 	};
 
 	function hideFormInfo() {

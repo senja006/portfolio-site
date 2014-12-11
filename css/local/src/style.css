@@ -1,3 +1,5 @@
+/* @override http://yarkevich.ru/css/local/src/style.css */
+
 /* @group main */
 
 @font-face {
@@ -565,11 +567,14 @@ img {
     position: absolute;
     z-index: 1;
     right: 10px;
-    bottom: 0;
+    bottom: -2px;
     left: 10px;
     height: 2px;
     content: '';
     background-color: #3ba8c0;
+}
+.menu__li.is-active .menu__a:after {
+	display: none;
 }
 .menu__li:last-child .menu__a:after {
     display: none;

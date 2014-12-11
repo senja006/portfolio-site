@@ -5,7 +5,7 @@ var popup = (function() {
 		$('.popup').on('click', '.close', closePopup);
 	};
 
-	function openPopup() {
+	function openPopup(ev) {
 		var $thisLink = $(this);
 		var currentPopup = $thisLink.attr('href');
 		var $currentPopup = $(currentPopup);

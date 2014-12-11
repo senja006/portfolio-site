@@ -1,108 +1,13 @@
-
-<!DOCTYPE html>
-<!--[if IE 9]> <html class="ie-9"> <![endif]-->
-<!--[if IE 8]> <html class="ie-8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Мои работы</title>
-	<link rel="stylesheet" href="css/vendor/src/reset.css">
-	<link rel="stylesheet" href="css/local/src/style.css" >
-	<link rel="stylesheet" href="css/local/src/sprite.css" />
-	<link rel="stylesheet" href="css/vendor/dest/vendor.min.css" />
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!--[if lte IE 9]>
-	      <script type="text/javascript" src="js/vendor/src/placeholders.min.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="js/vendor/src/picturefill.min.js"></script>
-</head>
-<body>
-	<!-- begin page  -->
-	<div class="page"><!-- begin header -->
-<header class="header">
-	<div class="logo">
-		<a href="index.html" class="logo__a"><img src="images/design/logo.png" srcset="images/design/logo-2x.png 2x" width="245" height="57"></a>
-	</div>
-	<div class="social">
-		<ul class="social__ul">
-			<li class="social__li">
-				<a href="http://vk.com/id130461439" target="_blank" class="social__a social__a--vk">
-					<div class="social__front"><span class="icon"></span></div>
-					<div class="social__back"><span class="icon"></span></div>
-				</a>
-			</li>
-			<li class="social__li">
-				<a href="http://twitter.com/senja006" target="_blank" class="social__a social__a--tw">
-					<div class="social__front"><span class="icon"></span></div>
-					<div class="social__back"><span class="icon"></span></div>
-				</a>
-			</li>
-			<li class="social__li">
-				<a href="http://www.facebook.com/profile.php?id=100008555380366" target="_blank" class="social__a social__a--fb">
-					<div class="social__front"><span class="icon"></span></div>
-					<div class="social__back"><span class="icon"></span></div>
-				</a>
-			</li>
-			<li class="social__li">
-				<a href="https://github.com/senja006" target="_blank" class="social__a social__a--git">
-					<div class="social__front"><span class="icon"></span></div>
-					<div class="social__back"><span class="icon"></span></div>
-				</a>
-			</li>
-		</ul>
-	</div>
-</header>
-<!-- end header -->
+<?php 
+	$title = 'Мои работы';
+	$menu_item = 'work';
+	require_once 'header.php';
+?>
 <!-- begin content -->
 <div class="content">
-	<!-- begin sidebar -->
-<div class="sidebar">
-	<div class="sidebar__block">
-		<!-- begin menu -->
-		<nav class="menu">
-			<ul class="menu__ul">
-				<li class="menu__li is-active">
-					<a href="index.html" class="menu__a"><span class="menu__span">Обо мне</span></a>
-				</li>
-				<li class="menu__li">
-					<a href="work.html" class="menu__a"><span class="menu__span">Мои работы</span></a>
-				</li>
-				<li class="menu__li">
-					<a href="feedback.html" class="menu__a"><span class="menu__span">Связаться со мной</span></a>
-				</li>
-			</ul>
-		</nav>
-		<!-- end menu -->
-	</div>
-	<div class="sidebar__block">
-		<!-- begin contacts -->
-		<div class="contacts">
-			<span class="contacts__title">Контакты</span>
-			<ul class="contacts__ul">
-				<li class="contacts__li">
-					<span class="icon icon--mail"></span>
-					<a href="mailto:senja999@mail.ru" class="contacts__a">senja999@mail.ru</a>
-				</li>
-				<li class="contacts__li">
-					<span class="icon icon--phone"></span>
-					<a href="#" class="contacts__a">+79184741204</a>
-				</li>
-				<li class="contacts__li">
-					<span class="icon icon--skype"></span>
-					<a href="#" class="contacts__a">senja006</a>
-				</li>
-			</ul>
-		</div>
-		<!-- end contacts -->
-	</div>
-</div>
-<!-- end sidebar -->
+<?php 
+	require_once 'sidebar.php';
+?>
 <!-- begin content__main -->
 <div class="content__main">
 	<!-- begin content__block -->
@@ -222,20 +127,6 @@
 
 </div>
 <!-- end content -->
-
-<!-- begin footer -->
-<footer class="footer">
-	<div class="copyright">
-		<span class="copyright__span">© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
-	</div>
-</footer>
-<!-- end footer -->	</div>
-	<!-- end page -->
-	
-	<script type="text/javascript" src="js/vendor/dest/vendor.min.js"></script>
-	<script type="text/javascript" src="js/local/src/validationForm.js"></script>
-	<script type="text/javascript" src="js/local/src/pageSize.js"></script>
-	<script type="text/javascript" src="js/local/src/popup.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</body>
-</html>
+<?php 
+	require_once 'footer.php';
+?>
