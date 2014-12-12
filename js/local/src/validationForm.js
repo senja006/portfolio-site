@@ -53,12 +53,25 @@ var validationForm = (function() {
 			data: data,
 			success: function(response) {
 				console.log(response);
-				// showInfoSuccess();
+				if(response === 'captcha error') {
+					resetCaptcha();
+					return false;
+				}
+				if(response === 'true') {
+					showInfoSuccess();
+				}
 			},
 			error: function(response) {
 				showInfoError();
 			} ,
 		})
+	};
+
+	function resetCaptcha() {
+		var val = '';
+		var $inputCaptcha = $currentForm.find('.input--captcha');
+		$inputCaptcha.val(val);
+		$currentForm.submit();
 	};
 
 	function checkRequired() {

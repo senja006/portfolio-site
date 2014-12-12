@@ -1,3 +1,7 @@
+<?php  
+	session_start();
+?>
+
 <!DOCTYPE html>
 <!--[if IE 9]> <html class="ie-9"> <![endif]-->
 <!--[if IE 8]> <html class="ie-8"> <![endif]-->
@@ -10,7 +14,6 @@
 	<link rel="stylesheet" href="css/vendor/src/reset.css">
 	<link rel="stylesheet" href="css/local/src/style.css" >
 	<link rel="stylesheet" href="css/local/src/sprite.css" />
-	<link rel="stylesheet" href="css/vendor/dest/vendor.min.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<!--[if lte IE 9]>
 	      <script type="text/javascript" src="js/vendor/src/placeholders.min.js"></script>
