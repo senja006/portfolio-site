@@ -29,15 +29,36 @@ var validationForm = (function() {
 	function controlValidationForm() {
 		$currentForm = $(this);
 		var required = checkRequired();
-		var validEmail = checkEmail();
-		if(!required || !validEmail) {
+		// var validEmail = checkEmail();
+		if(!required) {
 			showTooltipRequired();
 			showTooltipNoValid();
 			return false;
 		}
 		///////////////////////////////
-		showInfoSuccess();
+		sendForm();
+		// showInfoSuccess();
 		return false;
+	};
+
+	function sendForm() {
+		var data = $currentForm.serialize();
+		var url = $currentForm.attr('action');
+		var method = $currentForm.attr('method');
+		console.log(method);
+		$.ajax({
+			url: url,
+			type: method,
+			dataType: 'html',
+			data: data,
+			success: function(response) {
+				console.log(response);
+				// showInfoSuccess();
+			},
+			error: function(response) {
+				showInfoError();
+			} ,
+		})
 	};
 
 	function checkRequired() {

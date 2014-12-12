@@ -24,6 +24,9 @@
 <body>
 	<!-- begin page  -->
 	<div class="page">
+	<?php 
+		if($page_item != "admin") {
+	?>
 	<!-- begin header -->
 	<header class="header">
 		<div class="logo">
@@ -59,3 +62,4 @@
 		</div>
 	</header>
 	<!-- end header -->
+	<?php } ?>

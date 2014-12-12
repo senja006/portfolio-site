@@ -1,4 +1,4 @@
-/* @override http://yarkevich.ru/css/local/src/style.css */
+/* @override http://localhost:8888/portfolio-site/css/local/src/style.css */
 
 /* @group main */
 
@@ -550,6 +550,7 @@ img {
     cursor: default;
     color: #fff;
     background-color: #3ba8c0;
+    pointer-events: none;
 }
 .ie-8 .menu__li {
 	padding: 0 10px;

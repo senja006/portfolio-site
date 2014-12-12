@@ -1,5 +1,6 @@
 <?php
 	$title = 'Авторизация';
+	$page_item = 'admin';
 	require_once 'header.php';
 ?>
 <!-- begin admin -->

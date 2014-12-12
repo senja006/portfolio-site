@@ -16,7 +16,19 @@
 		<div class="feedback">
 			<div class="feedback__title"><span class="feedback__title-span">У вас интересный проект? Напишите мне</span></div>
 			<div class="feedback__form">
-				<form class="form-validation">
+				<form class="form-validation" method="POST" action="form-feedback.php">
+					<div class="form-info">
+						<div class="form-info-in form-info-success">
+							<a href="#" class="form-info-close"><span class="icon"></span></a>
+							<span class="form-info-title">Ура!</span>
+							<span class="form-info-text">Ваше сообщение отправлено.</span>
+						</div>
+						<div class="form-info-in form-info-error">
+							<a href="#" class="form-info-close"><span class="icon"></span></a>
+							<span class="form-info-title">Ошибка!</span>
+							<span class="form-info-text">Невозможно отправить сообщение.</span>
+						</div>
+					</div>
 					<div class="feedback__form-row">
 						<div class="container-input">
 							<span class="span-label">Имя</span>
