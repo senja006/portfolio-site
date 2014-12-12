@@ -28,11 +28,11 @@
 				</li>
 				<li class="contacts__li">
 					<span class="icon icon--phone"></span>
-					<a href="#" class="contacts__a">+79184741204</a>
+					<a href="tel:+79184741204" class="contacts__a">+79184741204</a>
 				</li>
 				<li class="contacts__li">
 					<span class="icon icon--skype"></span>
-					<a href="#" class="contacts__a">senja006</a>
+					<a href="skype:senja006?call" class="contacts__a">senja006</a>
 				</li>
 			</ul>
 		</div>

@@ -15,7 +15,7 @@
 	// $mail->SMTPAuth = true;
 	// $mail->SMTPSecure = "ssl";
 	// $mail->Username = "senja999";
-	// $mail->Password = "18051983mAr";
+	// $mail->Password = "";
 	// $mail->Port = 465;
 
 	// $mail->From = 'senja999@mail.ru';
