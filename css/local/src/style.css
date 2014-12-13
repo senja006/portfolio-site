@@ -1,3 +1,5 @@
+/* @override http://yarkevich.ru/css/local/src/style.css */
+
 /* @override http://localhost:8888/portfolio-site/css/local/src/style.css */
 
 /* @group main */
@@ -585,10 +587,13 @@ img {
 	display: none;
 }
 .ie-8 .menu__a {
-	border-bottom: 2px solid #3ba8c0;
+	border-top: 2px solid #3ba8c0;
 	box-sizing: border-box;
 }
-.ie-8 .menu__li:last-child .menu__a {
+.ie-8 .menu__li:first-child .menu__a {
+	border-color: transparent;
+}
+.ie-8 .menu__li.is-active + .menu__li .menu__a {
 	border-color: transparent;
 }
 .menu__a:hover {

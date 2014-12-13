@@ -45,14 +45,13 @@ var validationForm = (function() {
 		var data = $currentForm.serialize();
 		var url = $currentForm.attr('action');
 		var method = $currentForm.attr('method');
-		console.log(method);
 		$.ajax({
 			url: url,
 			type: method,
 			dataType: 'html',
 			data: data,
 			success: function(response) {
-				console.log(response);
+				// console.log(response);
 				if(response === 'captcha error') {
 					resetCaptcha();
 					return false;
@@ -204,9 +203,11 @@ var validationForm = (function() {
 		init: function() {
 			if($('form').length && !$('html').hasClass('ie-9') && !$('html').hasClass('ie-8')) {
 				controlAddMask();
-				addSupportRequired();
+			}
+			if($('form').length) {
 				addEventListeners();
 				hideFormInfo();
+				addSupportRequired();
 			}
 		},
 		hideAllTooltip: function() {
