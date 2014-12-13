@@ -2,16 +2,7 @@
 	$title = 'Контакты';
 	$menu_item = 'feedback';
 
-	include('kcaptcha/kcaptcha.php');
-
 	require_once 'header.php';
-
-	$captcha = new KCAPTCHA();
-	if($_REQUEST[session_name()]){
-		$_SESSION['captcha_keystring'] = $captcha->getKeyString();
-	}
-
-	// echo $_SESSION['captcha_keystring'];
 ?>
 <!-- begin content -->
 <div class="content">

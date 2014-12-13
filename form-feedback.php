@@ -1,5 +1,4 @@
 <?php
-	echo "string";
 	// require "PHPMailer/class.phpmailer.php";
 	// require "PHPMailer/class.smtp.php";
 
