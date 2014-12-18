@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="js/local/src/validationForm.js"></script>
 	<script type="text/javascript" src="js/local/src/pageSize.js"></script>
 	<script type="text/javascript" src="js/local/src/popup.js"></script>
+	<script type="text/javascript" src="js/local/src/mobileMenu.js"></script>
+	<script type="text/javascript" src="js/local/src/mobileSocial.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -30,6 +30,7 @@ var validationForm = (function() {
 
 	function controlValidationForm(ev) {
 		if(sendingProcess) return false;
+		addSupportRequired();
 		$currentForm = $(this);
 		var required = controlCheckRequired();
 		// console.log(required);
@@ -240,7 +241,7 @@ var validationForm = (function() {
 			if($('form').length) {
 				addEventListeners();
 				hideFormInfo();
-				addSupportRequired();
+				// addSupportRequired();
 			}
 		},
 		hideAllTooltip: function() {

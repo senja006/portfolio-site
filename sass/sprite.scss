@@ -24,6 +24,32 @@
 .social__a--git .social__back .icon {
 	@include s(icon-git-hover);
 }
+
+.soc--mobile .social__a--vk .social__front .icon {
+	@include s(icon-vk-tablet);
+}
+.soc--mobile .social__a--vk .social__back .icon {
+	@include s(icon-vk-tablet-hover);
+}
+.soc--mobile .social__a--tw .social__front .icon {
+	@include s(icon-tw-tablet);
+}
+.soc--mobile .social__a--tw .social__back .icon {
+	@include s(icon-tw-tablet-hover);
+}
+.soc--mobile .social__a--fb .social__front .icon {
+	@include s(icon-fb-tablet);
+}
+.soc--mobile .social__a--fb .social__back .icon {
+	@include s(icon-fb-tablet-hover);
+}
+.soc--mobile .social__a--git .social__front .icon {
+	@include s(icon-git-tablet);
+}
+.soc--mobile .social__a--git .social__back .icon {
+	@include s(icon-git-tablet-hover);
+}
+
 .icon--mail {
 	@include s(icon-mail);
 }
@@ -57,6 +83,12 @@
 .form-info-error .icon {
 	@include s(icon-cross-red);
 }
+.menu__mobile-a .icon {
+	@include s(navicon);
+}
+// .menu__mobile .menu__ul:before {
+// 	@include s(icon-pointer);
+// }
 
 
 

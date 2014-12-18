@@ -36,6 +36,30 @@
 			<div class="logo">
 				<a href="index.php" class="logo__a"><img src="images/design/logo.png" srcset="images/design/logo-2x.png 2x" width="245" height="57"></a>
 			</div>
+			<!-- begin menu__mobile -->
+			<nav class="menu__mobile visible-tablet">
+				<a href="#" class="menu__mobile-a">
+					<div class="navicon">
+						<ul class="navicon__ul">
+							<li class="navicon__li"></li>
+							<li class="navicon__li"></li>
+							<li class="navicon__li"></li>
+						</ul>
+					</div>
+				</a>
+				<ul class="menu__ul <?php if($menu_item == "about") echo "is-first";?>">
+					<li class="menu__li <?php if($menu_item == "about") echo "is-active";?>">
+						<a href="index.php" class="menu__a"><span class="menu__span">Обо мне</span></a>
+					</li>
+					<li class="menu__li <?php if($menu_item == "work") echo "is-active";?>">
+						<a href="work.php" class="menu__a"><span class="menu__span">Мои работы</span></a>
+					</li>
+					<li class="menu__li <?php if($menu_item == "feedback") echo "is-active";?>">
+						<a href="feedback.php" class="menu__a"><span class="menu__span">Связаться со мной</span></a>
+					</li> 
+				</ul>
+			</nav>
+			<!-- end menu__mobile -->
 			<div class="social">
 				<ul class="social__ul">
 					<li class="social__li">

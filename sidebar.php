@@ -1,5 +1,5 @@
 <!-- begin sidebar -->
-<div class="sidebar">
+<div class="sidebar hidden-tablet">
 	<div class="sidebar__block">
 		<!-- begin menu -->
 		<nav class="menu">
