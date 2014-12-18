@@ -108,24 +108,6 @@
 
 </div>
 <!-- end content -->
-<!-- begin contacts -->
-<div class="contacts contacts__mobile">
-	<ul class="contacts__ul">
-		<li class="contacts__li">
-			<span class="icon icon--mail"></span>
-			<a href="mailto:senja999@mail.ru" class="contacts__a">senja999@mail.ru</a>
-		</li>
-		<li class="contacts__li">
-			<span class="icon icon--phone"></span>
-			<a href="tel:+79184741204" class="contacts__a">+79184741204</a>
-		</li>
-		<li class="contacts__li">
-			<span class="icon icon--skype"></span>
-			<a href="skype:senja006?call" class="contacts__a">senja006</a>
-		</li>
-	</ul>
-</div>
-<!-- end contacts -->
 <?php 
 	require_once 'footer.php';
 ?>

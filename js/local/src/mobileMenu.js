@@ -4,7 +4,7 @@ var mobileMenu = (function() {
 
 	function addEventListeners() {
 		$('.menu__mobile-a').on('click', controlShowMenu);
-		$('body').on('click', closeMenu);
+		$(document).on('click', closeMenu);
 	};
 
 	function controlShowMenu() {
@@ -17,6 +17,7 @@ var mobileMenu = (function() {
 	};
 
 	function closeMenu(ev) {
+		if(!$link.parents('.is-visible').length) return;
 		if($(ev.target).closest('.menu__mobile').length) return;
 		$link.click();
 	};

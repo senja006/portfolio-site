@@ -4,6 +4,6 @@ $(document).ready(function() {
 	pageSize.init(); // размер страницы
 	popup.init(); // popup
 	mobileMenu.init(); // меню для планшетов и мобильников
-	mobileSocial.init(); // соц. кнопки
+	mobileClasses.init(); // определение ширины браузера
 
 });

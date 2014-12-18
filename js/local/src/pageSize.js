@@ -2,6 +2,10 @@ var pageSize = (function() {
 
 	var heightFooter = null;
 
+	function addEventListeners() {
+		$(window).on('resize', controlSetPaddingPage);
+	};
+
 	function controlSetPaddingPage() {
 		getHeightFooter();
 		setPaddingPage();
@@ -19,6 +23,7 @@ var pageSize = (function() {
 		init: function() {
 			if($('.footer').length) {
 				controlSetPaddingPage();
+				addEventListeners();
 			};
 		},
 	};
