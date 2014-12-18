@@ -26,18 +26,17 @@ var validationForm = (function() {
 		addMaskNumbers();
 	};
 
-	function controlValidationForm() {
+	function controlValidationForm(ev) {
 		$currentForm = $(this);
 		var required = checkRequired();
+		// console.log(required);
 		// var validEmail = checkEmail();
 		if(!required) {
 			showTooltipRequired();
 			showTooltipNoValid();
 			return false;
 		}
-		///////////////////////////////
 		sendForm();
-		// showInfoSuccess();
 		return false;
 	};
 
@@ -51,27 +50,41 @@ var validationForm = (function() {
 			dataType: 'html',
 			data: data,
 			success: function(response) {
-				// console.log(response);
-				if(response === 'captcha error') {
-					resetCaptcha();
-					return false;
-				}
-				if(response === 'true') {
-					showInfoSuccess();
-				}
+				checkResponse(response);
 			},
 			error: function(response) {
 				showInfoError();
 			} ,
-		})
+		});
 	};
 
-	function resetCaptcha() {
+	function checkResponse(response) {
+		var response = JSON.parse(response);
+		console.log(response);
+		if(response['captcha_status'] === 'false') resetInput('.input--email');
+		if(response['captcha_status'] === 'false') resetInput('.input--captcha');
+	};
+
+	function resetInput(input) {
 		var val = '';
-		var $inputCaptcha = $currentForm.find('.input--captcha');
-		$inputCaptcha.val(val);
+		var $input = $currentForm.find(input);
+		$input.val(val);
 		$currentForm.submit();
 	};
+
+	// function resetCaptcha() {
+	// 	var val = '';
+	// 	var $inputCaptcha = $currentForm.find('.input--captcha');
+	// 	$inputCaptcha.val(val);
+	// 	$currentForm.submit();
+	// };
+
+	// function resetEmail() {
+	// 	var val = '';
+	// 	var $inputEmail = $currentForm.find('.input--email');
+	// 	$inputEmail.val(val);
+	// 	$currentForm.submit();
+	// };
 
 	function checkRequired() {
 		$inputsRequired = $currentForm.find('.ui-state-error');
@@ -163,7 +176,11 @@ var validationForm = (function() {
 	};
 
 	function addSupportRequired() {
-		$('.form-validation').h5Validate();
+		var $form = $('.form-validation');
+		$form.h5Validate();
+		$form.find('textarea').trigger('focus');
+		$form.find('input').trigger('focus');
+		$form.find('input').trigger('blur');
 	};
 
 	function hideTooltip() {

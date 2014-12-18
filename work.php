@@ -23,7 +23,7 @@
 							<div class="work__name"><span class="work__name-span">Название</span></div>
 						</div>
 						<a href="#" class="work__a">www.site.ru</a>
-						<p class="work__p">Информация о проекте 1 превью 2 строки...</p>
+						<p class="work__p">Информация о проекте 1 превью 2 строки Информация о проекте 1 превью 2 строки...</p>
 					</li>
 					<li class="work__li">
 						<div class="work__img">

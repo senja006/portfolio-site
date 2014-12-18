@@ -6,7 +6,7 @@
 <!--[if IE 9]> <html class="ie-9"> <![endif]-->
 <!--[if IE 8]> <html class="ie-8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
-<head>
+<head lang="ru">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,36 +32,38 @@
 	?>
 	<!-- begin header -->
 	<header class="header">
-		<div class="logo">
-			<a href="index.php" class="logo__a"><img src="images/design/logo.png" srcset="images/design/logo-2x.png 2x" width="245" height="57"></a>
-		</div>
-		<div class="social">
-			<ul class="social__ul">
-				<li class="social__li">
-					<a href="http://vk.com/id130461439" target="_blank" class="social__a social__a--vk">
-						<div class="social__front"><span class="icon"></span></div>
-						<div class="social__back"><span class="icon"></span></div>
-					</a>
-				</li>
-				<li class="social__li">
-					<a href="http://twitter.com/senja006" target="_blank" class="social__a social__a--tw">
-						<div class="social__front"><span class="icon"></span></div>
-						<div class="social__back"><span class="icon"></span></div>
-					</a>
-				</li>
-				<li class="social__li">
-					<a href="http://www.facebook.com/profile.php?id=100008555380366" target="_blank" class="social__a social__a--fb">
-						<div class="social__front"><span class="icon"></span></div>
-						<div class="social__back"><span class="icon"></span></div>
-					</a>
-				</li>
-				<li class="social__li">
-					<a href="https://github.com/senja006" target="_blank" class="social__a social__a--git">
-						<div class="social__front"><span class="icon"></span></div>
-						<div class="social__back"><span class="icon"></span></div>
-					</a>
-				</li>
-			</ul>
+		<div class="header__in">
+			<div class="logo">
+				<a href="index.php" class="logo__a"><img src="images/design/logo.png" srcset="images/design/logo-2x.png 2x" width="245" height="57"></a>
+			</div>
+			<div class="social">
+				<ul class="social__ul">
+					<li class="social__li">
+						<a href="http://vk.com/id130461439" target="_blank" class="social__a social__a--vk">
+							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__back"><span class="icon"></span></div>
+						</a>
+					</li>
+					<li class="social__li">
+						<a href="http://twitter.com/senja006" target="_blank" class="social__a social__a--tw">
+							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__back"><span class="icon"></span></div>
+						</a>
+					</li>
+					<li class="social__li">
+						<a href="http://www.facebook.com/profile.php?id=100008555380366" target="_blank" class="social__a social__a--fb">
+							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__back"><span class="icon"></span></div>
+						</a>
+					</li>
+					<li class="social__li">
+						<a href="https://github.com/senja006" target="_blank" class="social__a social__a--git">
+							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__back"><span class="icon"></span></div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<!-- end header -->

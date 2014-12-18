@@ -1,7 +1,7 @@
 <?php 
 	$title = 'Контакты';
 	$menu_item = 'feedback';
-
+	include('kcaptcha/kcaptcha.php');
 	require_once 'header.php';
 ?>
 <!-- begin content -->
@@ -17,7 +17,7 @@
 		<div class="feedback">
 			<div class="feedback__title"><span class="feedback__title-span">У вас интересный проект? Напишите мне</span></div>
 			<div class="feedback__form">
-				<form class="form-validation" method="POST" action="form-feedback.php">
+				<form class="form-validation" method="POST" action="send-mail.php">
 					<div class="form-info">
 						<div class="form-info-in form-info-success">
 							<a href="#" class="form-info-close"><span class="icon"></span></a>
@@ -59,7 +59,7 @@
 						<div class="container-input">
 							<span class="span-label">Введите код, указанный на картинке</span>
 							<div class="captcha">
-								<div class="captcha__img"><img src="kcaptcha/?<?php echo session_name()?>=<?php echo session_id()?>"></div>
+								<div class="captcha__img"><img src="captcha.php" /></div>
 								<div class="input-wrapper">
 									<input class="input input--captcha" type="text" name="captcha" placeholder="Введите код" required />
 									<div class="tooltip tooltip--right" data-required="введите код"><span class="tooltip__span"></span></div>
