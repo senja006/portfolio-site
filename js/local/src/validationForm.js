@@ -195,9 +195,9 @@ var validationForm = (function() {
 	function addSupportRequired() {
 		var $form = $('.form-validation');
 		$form.h5Validate();
-		$form.find('textarea').trigger('focus');
-		$form.find('input').trigger('focus');
-		$form.find('input').trigger('blur');
+		// $form.find('textarea').trigger('focus');
+		// $form.find('input').trigger('focus');
+		// $form.find('input').trigger('blur');
 	};
 
 	function hideTooltip() {
@@ -241,7 +241,7 @@ var validationForm = (function() {
 			if($('form').length) {
 				addEventListeners();
 				hideFormInfo();
-				// addSupportRequired();
+				addSupportRequired();
 			}
 		},
 		hideAllTooltip: function() {

@@ -55,6 +55,7 @@
 html, body {
     font-family: 'FiraSans-Light';
     font-size: 14px;
+    /*-webkit-font-smoothing: antialiased;*/
     height: 100%;
 }
 .page {
@@ -1625,6 +1626,7 @@ img {
     border: 1px solid #48cbe8;
     border-radius: 4px;
     background-color: #fbfcfd;
+    background: #fff;
 }
 .captcha__img:before {
     display: inline-block;
@@ -1898,11 +1900,11 @@ img {
 	    color: #58697A;
 	    font-size: 22px;
 	}
-	.input, .textarea {	    
+	#add-project .input, #add-project .textarea {	    
 	    height: 49px;
 	    font-size: 15px;
 	}
-	.textarea {
+	#add-project .textarea {
 	    height: 119px;
 	}
  	.popup .textarea {
@@ -1912,6 +1914,44 @@ img {
 	    padding: 0 33px;
 	    height: 35px;
 	    margin-bottom: 20px;
+	}
+	.feedback__title {
+	    height: 111px;
+	    border-bottom-width: 22px;
+	    margin-bottom: 58px;
+	}
+	.feedback__form {	    
+	    width: 455px;
+	}
+	.feedback__form .textarea {
+		width: 455px;
+	}
+	.feedback__form .input {
+		width: 210px;
+		height: 35px;
+	}
+	.feedback__form .span-label {
+		font-size: 22px;
+	}
+	.feedback__form-row {
+		margin-bottom: 14px;
+	}
+	.feedback__form .textarea {
+		height: 210px;
+		margin-bottom: 25px;
+	}
+	.feedback__form .container-input--captcha .span-label {
+		font-size: 18px;
+		margin-bottom: 13px;
+	}
+	.captcha {
+		width: 455px;
+		height: 96px;
+		margin-bottom: 30px;
+	}
+	.captcha__img {
+	    height: 96px;
+	    width: 225px;
 	}
 
 /* @group menu mobile */

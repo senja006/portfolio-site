@@ -1,7 +1,6 @@
 <?php 
 	$title = 'Контакты';
 	$menu_item = 'feedback';
-	include('kcaptcha/kcaptcha.php');
 	require_once 'header.php';
 ?>
 <!-- begin content -->
@@ -56,7 +55,7 @@
 						</div>
 					</div>
 					<div class="feedback__form-row">
-						<div class="container-input">
+						<div class="container-input container-input--captcha">
 							<span class="span-label">Введите код, указанный на картинке</span>
 							<div class="captcha">
 								<div class="captcha__img"><img src="captcha.php" /></div>
