@@ -9,6 +9,8 @@ var validationForm = (function() {
 	};
 	var $inputsRequired = null;
 	var $currentForm = null;
+	var sendingProcess = false;
+	var $buttonSubmit = null;
 
 	function addEventListeners() {
 		$('.form-validation').on('submit', controlValidationForm);
@@ -27,13 +29,14 @@ var validationForm = (function() {
 	};
 
 	function controlValidationForm(ev) {
+		if(sendingProcess) return false;
 		$currentForm = $(this);
-		var required = checkRequired();
+		var required = controlCheckRequired();
 		// console.log(required);
 		// var validEmail = checkEmail();
 		if(!required) {
-			showTooltipRequired();
-			showTooltipNoValid();
+			// showTooltipRequired();
+			// showTooltipNoValid();
 			return false;
 		}
 		sendForm();
@@ -41,6 +44,8 @@ var validationForm = (function() {
 	};
 
 	function sendForm() {
+		sendingProcess = true;
+		disableButton();
 		var data = $currentForm.serialize();
 		var url = $currentForm.attr('action');
 		var method = $currentForm.attr('method');
@@ -51,44 +56,55 @@ var validationForm = (function() {
 			data: data,
 			success: function(response) {
 				checkResponse(response);
+				sendingProcess = false;
+				unDisableButton();
 			},
 			error: function(response) {
 				showInfoError();
+				sendingProcess = false;
+				unDisableButton();
 			} ,
 		});
 	};
 
 	function checkResponse(response) {
 		var response = JSON.parse(response);
-		console.log(response);
-		if(response['captcha_status'] === 'false') resetInput('.input--email');
-		if(response['captcha_status'] === 'false') resetInput('.input--captcha');
+		var emailStatus = response['email_status'];
+		var captchaStatus = response['captcha_status'];
+		if(emailStatus === 'false' || captchaStatus === 'false') {
+			if(emailStatus === 'false') resetInput('.input--email');
+			if(captchaStatus === 'false') resetInput('.input--captcha');
+			return false;
+		}
+		var sendStatus = response['send_status'];
+		if(sendStatus) {
+			showInfoSuccess();
+		}else{
+			showInfoError();
+		}
+	};
+
+	function disableButton() {
+		$buttonSubmit = $currentForm.find('input[type=submit]');
+		$buttonSubmit.addClass('is-disabled');
+	};
+
+	function unDisableButton() {
+		$buttonSubmit.removeClass('is-disabled');
 	};
 
 	function resetInput(input) {
 		var val = '';
 		var $input = $currentForm.find(input);
 		$input.val(val);
-		$currentForm.submit();
+		addSupportRequired();
+		controlCheckRequired();
 	};
 
-	// function resetCaptcha() {
-	// 	var val = '';
-	// 	var $inputCaptcha = $currentForm.find('.input--captcha');
-	// 	$inputCaptcha.val(val);
-	// 	$currentForm.submit();
-	// };
-
-	// function resetEmail() {
-	// 	var val = '';
-	// 	var $inputEmail = $currentForm.find('.input--email');
-	// 	$inputEmail.val(val);
-	// 	$currentForm.submit();
-	// };
-
-	function checkRequired() {
+	function controlCheckRequired() {
 		$inputsRequired = $currentForm.find('.ui-state-error');
 		if($inputsRequired.length) {
+			showTooltipRequired();
 			return false;
 		}else{
 			return true;
