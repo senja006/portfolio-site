@@ -42,8 +42,11 @@
 <?php } ?>
 <!-- begin footer -->
 <footer class="footer">
-	<div class="copyright">
-		<span class="copyright__span">© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+	<div class="footer__in">
+		<a href="admin.php" class="login"><span class="icon"></span></a>
+		<div class="copyright">
+			<span class="copyright__span">© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+		</div>
 	</div>
 </footer>
 <!-- end footer -->	</div>

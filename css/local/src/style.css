@@ -832,6 +832,11 @@ img {
 .copyright__span {
     font-size: 13px;
     color: #4a545d;
+    margin-left: 20px;
+}
+.footer__in {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /* @end */

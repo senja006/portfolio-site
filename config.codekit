@@ -198,13 +198,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-2x-s23a0f04e2d.png": {
+	"\/images\/design\/sprite-images-2x-s3021b648c4.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 82969,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s23a0f04e2d.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s23a0f04e2d.png",
+		"initialSize": 84059,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s3021b648c4.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s3021b648c4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -392,6 +392,28 @@
 		"initialSize": 2502,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-git-tablet-hover-2x.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-git-tablet-hover-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-login-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1502,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-login-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-login-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-login-open-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1496,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-login-open-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-login-open-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -594,13 +616,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-s4929ba04f0.png": {
+	"\/images\/design\/sprite-images-s27fd9679ff.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s4929ba04f0.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s4929ba04f0.png",
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s27fd9679ff.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s27fd9679ff.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -788,6 +810,28 @@
 		"initialSize": 1420,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-git.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-git.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-login-open.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1496,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-login-open.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-login-open.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-login.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1502,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-login.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-login.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

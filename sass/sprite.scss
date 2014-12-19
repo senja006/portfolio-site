@@ -105,6 +105,12 @@
 .social.visible-phone .social__a--git .icon {
 	@include s(icon-git-mobile);
 }
+.login .icon {
+	@include s(icon-login);
+}
+.login:hover .icon {
+	@include s(icon-login-open);
+}
 
 
 
