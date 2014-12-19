@@ -1236,7 +1236,7 @@ img {
 .button.is-disabled {
     pointer-events: none;
     box-shadow: none;
-    background: #7a7978;
+    background: #849db5;
 }
 .container-submit {
     text-align: center;
@@ -1300,12 +1300,12 @@ img {
     z-index: -1;
     top: 50%;
     right: 100%;
-    visibility: hidden;
     height: 26px;
     margin-top: -13px;
     margin-right: 20px;
     padding: 0 15px;
     white-space: nowrap;
+    visibility: hidden;
     opacity: 0;
     color: #fff;
     border-radius: 2px;
@@ -1952,6 +1952,35 @@ img {
 	.captcha__img {
 	    height: 96px;
 	    width: 225px;
+	}
+	.admin__in {	    
+	    width: 510px;
+	}
+ 	.admin__form .tooltip {
+		right: auto;
+		top: auto;
+		margin: 0;
+		bottom: 100%;
+		margin-bottom: 20px;
+		font-size: 20px;
+		padding: 0 8px;
+		left: -16px;
+		height: 35px;
+	}
+	.admin__form .tooltip:after {
+		border-color: transparent;
+		left: 50%;
+		margin-left: -14px;
+		top: 100%;
+		margin-top: 0;
+		border-width: 14px;
+		border-top-color: #f97e76;
+	}
+	.is-error .tooltip {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.2s linear;
+		animation: none;
 	}
 
 /* @group menu mobile */

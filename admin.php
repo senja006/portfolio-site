@@ -13,14 +13,14 @@
 					<span class="span-label">Логин</span>
 					<div class="input-wrapper">
 						<input class="input" type="text" name="login" placeholder="Введите логин" required />
-						<div class="tooltip" data-required="введите логин"><span class="tooltip__span"></span></div>
+						<div class="tooltip" data-required="введите логин"><span class="tooltip__span">введите логин</span></div>
 					</div>
 				</div>
 				<div class="container-input">
 					<span class="span-label">Пароль</span>
 					<div class="input-wrapper">
 						<input class="input" type="password" name="pass" placeholder="Введите пароль" required />
-						<div class="tooltip" data-required="введите пароль"><span class="tooltip__span"></span></div>
+						<div class="tooltip" data-required="введите пароль"><span class="tooltip__span">введите пароль</span></div>
 					</div>
 				</div>
 				<input class="button button--shadow" type="submit" value="Войти">

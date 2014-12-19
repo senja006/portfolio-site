@@ -1,3 +1,4 @@
+<?php if($page_item != 'admin') { ?>
 <!-- begin contacts -->
 <div class="contacts contacts__mobile">
 	<ul class="contacts__ul">
@@ -16,6 +17,7 @@
 	</ul>
 </div>
 <!-- end contacts -->
+<?php } ?>
 <!-- begin footer -->
 <footer class="footer">
 	<div class="copyright">
