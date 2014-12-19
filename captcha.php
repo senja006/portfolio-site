@@ -5,7 +5,7 @@ $img_captcha = imagecreatefromjpeg('images/design/bg-captcha.jpg');
 // создаем объект цвета
 $color = imagecolorallocate($img_captcha, 0, 0, 0);
 //  сглаживания
-imageantialias($img_captcha, true);
+// imageantialias($img_captcha, true);
 // устанавливаем количество символов в капче
 $numChars = 5;
 // генерируем случайную строку

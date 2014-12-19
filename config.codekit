@@ -121,22 +121,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/content\/captcha.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3603,
-		"inputAbbreviatedPath": "\/images\/content\/captcha.jpg",
-		"outputAbbreviatedPath": "\/images\/content\/captcha.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/content\/photo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10059,
+		"initialSize": 372083,
 		"inputAbbreviatedPath": "\/images\/content\/photo.jpg",
 		"outputAbbreviatedPath": "\/images\/content\/photo.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -209,13 +198,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-2x-s1d9e21af62.png": {
+	"\/images\/design\/sprite-images-2x-sbe005ad76a.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 66796,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s1d9e21af62.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s1d9e21af62.png",
+		"initialSize": 81818,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-sbe005ad76a.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-sbe005ad76a.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -308,6 +297,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images-2x\/icon-fb-mobile-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2292,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-fb-mobile-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-fb-mobile-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images-2x\/icon-fb-tablet-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -348,6 +348,17 @@
 		"initialSize": 2932,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-git-hover-2x.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-git-hover-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-git-mobile-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3249,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-git-mobile-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-git-mobile-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -462,6 +473,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images-2x\/icon-tw-mobile-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2777,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-tw-mobile-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-tw-mobile-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images-2x\/icon-tw-tablet-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -517,6 +539,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images-2x\/icon-vk-mobile-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3758,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-vk-mobile-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-vk-mobile-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images-2x\/icon-vk-tablet-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -550,13 +583,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-s8732d1d66a.png": {
+	"\/images\/design\/sprite-images-s2e01dcb753.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s8732d1d66a.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s8732d1d66a.png",
+		"initialSize": 28482,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s2e01dcb753.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s2e01dcb753.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -638,6 +671,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images\/icon-fb-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1103,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-fb-mobile.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-fb-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images\/icon-fb-tablet-hover.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -678,6 +722,17 @@
 		"initialSize": 1420,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-git-hover.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-git-hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-git-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1550,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-git-mobile.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-git-mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -792,6 +847,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/design\/sprite-images\/icon-tw-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1260,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-tw-mobile.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-tw-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/design\/sprite-images\/icon-tw-tablet-hover.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -843,6 +909,17 @@
 		"initialSize": 1230,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-vk-hover.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-vk-hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-vk-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1514,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-vk-mobile.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-vk-mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -900,23 +977,23 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/js\/local\/src\/mobileClasses.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/local\/src\/mobileClasses.js",
+		"outputAbbreviatedPath": "\/js\/local\/src\/min\/mobileClasses-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/js\/local\/src\/mobileMenu.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/local\/src\/mobileMenu.js",
 		"outputAbbreviatedPath": "\/js\/local\/src\/min\/mobileMenu-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
-	"\/js\/local\/src\/mobileSocial.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/local\/src\/mobileSocial.js",
-		"outputAbbreviatedPath": "\/js\/local\/src\/min\/mobileSocial-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

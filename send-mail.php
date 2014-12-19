@@ -8,6 +8,8 @@
 	$sess_captcha = $_SESSION['randStrn'];
 
 	$data = array();
+	$data['email'] = $email;
+	$data['name'] = $name;
 
 	if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		$data['email_status'] = 'true';

@@ -87,23 +87,30 @@
 .menu__mobile-a .icon {
 	@include s(navicon);
 }
-// .menu__mobile .menu__ul:before {
-// 	@include s(icon-pointer);
-// }
+.social.visible-phone .social__a--vk .icon {
+	@include s(icon-vk-mobile);
+}
+.social.visible-phone .social__a--tw .icon {
+	@include s(icon-tw-mobile);
+}
+.social.visible-phone .social__a--fb .icon {
+	@include s(icon-fb-mobile);
+}
+.social.visible-phone .social__a--git .icon {
+	@include s(icon-git-mobile);
+}
 
 
 
-// @mixin s($name) {
-// 	background: sprite($sprite-images, $name);
-// 	height: image-height(sprite-file($sprite-images, $name));
-//  	width: image-width(sprite-file($sprite-images, $name));
-// }
 
-// $sprite-images: sprite-map("sprite-images/*.png", $spacing: 50px);
 
-// .item1 {
-// 	@include s(color-black);
-// 	&:hover {
-// 		@include s(color-gold);
-// 	}
-// }
+
+
+
+
+
+
+
+
+
+

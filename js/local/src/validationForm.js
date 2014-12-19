@@ -28,10 +28,10 @@ var validationForm = (function() {
 		addMaskNumbers();
 	};
 
-	function controlValidationForm(ev) {
+	function controlValidationForm() {
 		if(sendingProcess) return false;
-		addSupportRequired();
 		$currentForm = $(this);
+		addSupportRequired();
 		var required = controlCheckRequired();
 		// console.log(required);
 		// var validEmail = checkEmail();
@@ -57,6 +57,7 @@ var validationForm = (function() {
 			data: data,
 			success: function(response) {
 				checkResponse(response);
+				console.log(response);
 				sendingProcess = false;
 				unDisableButton();
 			},
@@ -98,7 +99,8 @@ var validationForm = (function() {
 		var val = '';
 		var $input = $currentForm.find(input);
 		$input.val(val);
-		addSupportRequired();
+		$input.removeClass('ui-state-valid').addClass('ui-state-error');
+		// addSupportRequired();
 		controlCheckRequired();
 	};
 
@@ -235,13 +237,14 @@ var validationForm = (function() {
 
 	return {
 		init: function() {
-			if($('form').length && !$('html').hasClass('ie-9') && !$('html').hasClass('ie-8')) {
-				controlAddMask();
-			}
 			if($('form').length) {
+				addSupportRequired();
 				addEventListeners();
 				hideFormInfo();
-				addSupportRequired();
+				// $(document).scrollTop(0);
+			}
+			if($('form').length && !$('html').hasClass('ie-9') && !$('html').hasClass('ie-8')) {
+				controlAddMask();
 			}
 		},
 		hideAllTooltip: function() {

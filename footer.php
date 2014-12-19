@@ -3,20 +3,42 @@
 <div class="contacts contacts__mobile">
 	<ul class="contacts__ul">
 		<li class="contacts__li">
-			<span class="icon icon--mail"></span>
-			<a href="mailto:senja999@mail.ru" class="contacts__a">senja999@mail.ru</a>
+			<div class="contacts__li-container">
+				<span class="icon icon--mail"></span>
+				<a href="mailto:senja999@mail.ru" class="contacts__a">senja999@mail.ru</a>
+			</div>
 		</li>
 		<li class="contacts__li">
-			<span class="icon icon--phone"></span>
-			<a href="tel:+79184741204" class="contacts__a">+79184741204</a>
+			<div class="contacts__li-container">
+				<span class="icon icon--phone"></span>
+				<a href="tel:+79184741204" class="contacts__a">+79184741204</a>
+			</div>
 		</li>
 		<li class="contacts__li">
-			<span class="icon icon--skype"></span>
-			<a href="skype:senja006?call" class="contacts__a">senja006</a>
+			<div class="contacts__li-container">
+				<span class="icon icon--skype"></span>
+				<a href="skype:senja006?call" class="contacts__a">senja006</a>
+			</div>
 		</li>
 	</ul>
 </div>
 <!-- end contacts -->
+<div class="social visible-phone">
+	<ul class="social__ul">
+		<li class="social__li">
+			<a href="http://vk.com/id130461439" target="_blank" class="social__a social__a--vk"><span class="icon"></span></a>
+		</li>
+		<li class="social__li">
+			<a href="http://twitter.com/senja006" target="_blank" class="social__a social__a--tw"><span class="icon"></span></a>
+		</li>
+		<li class="social__li">
+			<a href="http://www.facebook.com/profile.php?id=100008555380366" target="_blank" class="social__a social__a--fb"><span class="icon"></span></a>
+		</li>
+		<li class="social__li">
+			<a href="https://github.com/senja006" target="_blank" class="social__a social__a--git"><span class="icon"></span></a>
+		</li>
+	</ul>
+</div>
 <?php } ?>
 <!-- begin footer -->
 <footer class="footer">
