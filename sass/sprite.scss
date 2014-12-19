@@ -72,8 +72,14 @@
 .is-tablet .icon--mountains {
 	@include s(icon-mountains-tablet);
 }
+.is-tablet.is-phone .icon--mountains {
+	@include s(icon-mountains);
+}
 .close .icon {
 	@include s(icon-close);
+}
+.is-phone .close .icon {
+	@include s(icon-close-phone);
 }
 .icon--upload {
 	@include s(icon-upload);

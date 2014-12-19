@@ -81,7 +81,7 @@
 								<span class="span-label">Название проекта</span>
 								<div class="input-wrapper">
 									<input class="input" type="text" name="name" placeholder="Введите название" required />
-									<div class="tooltip" data-required="введите название"><span class="tooltip__span"></span></div>
+									<div class="tooltip" data-required="введите название"><span class="tooltip__span">введите название</span></div>
 								</div>
 							</div>
 							<div class="container-input">
@@ -89,7 +89,7 @@
 								<div class="input-file">
 									<div class="input-wrapper">
 										<input class="input input__file-name" type="text" name="file-name" placeholder="Загрузите изображение" readonly required />
-										<div class="tooltip"data-required="изображение"><span class="tooltip__span"></span></div>
+										<div class="tooltip"data-required="изображение"><span class="tooltip__span">изображение</span></div>
 									</div>
 									<label class="label__file" for="input__file">
 										<span class="icon icon--upload"></span>
@@ -101,7 +101,7 @@
 								<span class="span-label">URL проекта</span>
 								<div class="input-wrapper">
 									<input class="input" type="text" name="url" placeholder="Добавьте ссылку" required />
-									<div class="tooltip" data-no-valid="введите правильный URL" data-required="ссылка на проект"><span class="tooltip__span"></span></div>
+									<div class="tooltip" data-no-valid="введите правильный URL" data-required="ссылка на проект"><span class="tooltip__span">ссылка на проект</span></div>
 								</div>
 							</div>
 							<div class="container-input">

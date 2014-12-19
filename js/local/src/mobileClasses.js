@@ -8,11 +8,14 @@ var mobileClasses = (function() {
 
 	function addClassPage() {
 		var windowWidth = $(window).width();
+		$html.removeClass('is-phone').removeClass('is-tablet');
 		if(windowWidth < 960) {
 			$html.addClass('is-tablet');
-		}else{
-			$html.removeClass('is-tablet');
 		}
+		if(windowWidth < 768) {
+			$html.addClass('is-phone');
+		}
+		
 	};
 
 	return {

@@ -198,13 +198,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-2x-sbe005ad76a.png": {
+	"\/images\/design\/sprite-images-2x-s23a0f04e2d.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 81818,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-sbe005ad76a.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-sbe005ad76a.png",
+		"initialSize": 82969,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s23a0f04e2d.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x-s23a0f04e2d.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -227,6 +227,17 @@
 		"initialSize": 1251,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-2x.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images-2x\/icon-close-phone-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 906,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-phone-2x.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-2x\/icon-close-phone-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -583,13 +594,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/design\/sprite-images-s2e01dcb753.png": {
+	"\/images\/design\/sprite-images-s4929ba04f0.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 28482,
-		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s2e01dcb753.png",
-		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s2e01dcb753.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images-s4929ba04f0.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images-s4929ba04f0.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -601,6 +612,17 @@
 		"initialSize": 713,
 		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-briefcase.png",
 		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-briefcase.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/design\/sprite-images\/icon-close-phone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 574,
+		"inputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-close-phone.png",
+		"outputAbbreviatedPath": "\/images\/design\/sprite-images\/icon-close-phone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
