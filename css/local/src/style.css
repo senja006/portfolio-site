@@ -842,9 +842,13 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 	cursor: pointer;
+	transition: opacity 0.1s linear;
 }
 .login .icon {
 	cursor: pointer;
+}
+.is-process .login {
+	opacity: .4;
 }
 
 /* @end */
@@ -871,6 +875,7 @@ img {
 .work__add {
     float: left;
     margin-left: 30px;
+    margin-bottom: 42px;
 }
 .work__add-a {
     font-size: 0;
@@ -952,7 +957,7 @@ img {
 .work__name-span {
     font-size: 12px;
     display: inline-block;
-    max-width: 90%;
+    max-width: 70%;
     padding: 5px;
     transition: all .2s linear;
     -webkit-transform: translateZ(0) scale(.7);

@@ -62,6 +62,7 @@
 	<script type="text/javascript" src="js/local/src/mobileClasses.js"></script>
 	<script type="text/javascript" src="js/local/src/feedbackForm.js"></script>
 	<script type="text/javascript" src="js/local/src/loginForm.js"></script>
+	<script type="text/javascript" src="js/local/src/addProject.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

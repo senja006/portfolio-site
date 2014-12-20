@@ -22,8 +22,8 @@
 	}else{
 		$data['captcha_status'] = 'true';
 	}
-	$data['captcha_sess'] = $sess_captcha;
-	$data['captcha_input'] = $captcha_code;
+	// $data['captcha_sess'] = $sess_captcha;
+	// $data['captcha_input'] = $captcha_code;
 
 	if($data['email_status'] == 'true' && $data['captcha_status'] == 'true') {
 		require_once 'PHPMailer/PHPMailerAutoload.php';

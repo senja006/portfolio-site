@@ -7,5 +7,6 @@ $(document).ready(function() {
 	mobileClasses.init(); // определение ширины браузера
 	feedbackForm.init(); // форма обратной связи
 	loginForm.init(); // форма авторизации
+	addProject.init(); // добавление проектов
 
 });

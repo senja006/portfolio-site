@@ -43,6 +43,7 @@ var validationForm = (function() {
 				var $input = $currentForm.find(key);
 				$input.val(defaultVal);
 				$input.removeClass('ui-state-valid').addClass('ui-state-error');
+				$input.blur();
 			}
 		}
 		controlCheckRequired($currentForm);

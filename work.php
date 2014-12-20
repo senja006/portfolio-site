@@ -18,39 +18,9 @@
 			<h2 class="content__block-title"><span class="content__block-title-span">Мои работы</span></h2>
 			<div class="work__list">
 				<ul class="work__ul">
-					<li class="work__li">
-						<div class="work__img">
-							<img src="images/content/work.jpg" width="181" height="127">
-							<div class="work__name"><span class="work__name-span">Название</span></div>
-						</div>
-						<a href="#" class="work__a">www.site.ru</a>
-						<p class="work__p">Информация о проекте 1 превью 2 строки Информация о проекте 1 превью 2 строки...</p>
-					</li>
-					<li class="work__li">
-						<div class="work__img">
-							<img src="images/content/work.jpg" width="181" height="127">
-							<div class="work__name"><span class="work__name-span">Название</span></div>
-						</div>
-						<a href="#" class="work__a">www.site.ru</a>
-						<p class="work__p">Информация о проекте 1 превью 2 строки...</p>
-					</li>
-					<li class="work__li">
-						<div class="work__img">
-							<img src="images/content/work.jpg" width="181" height="127">
-							<div class="work__name"><span class="work__name-span">Название</span></div>
-						</div>
-						<a href="#" class="work__a">www.site.ru</a>
-						<p class="work__p">Информация о проекте 1 превью 2 строки...</p>
-					</li>
-					<li class="work__li">
-						<div class="work__img">
-							<img src="images/content/work.jpg" width="181" height="127">
-							<div class="work__name"><span class="work__name-span">Название</span></div>
-						</div>
-						<a href="#" class="work__a">www.site.ru</a>
-						<p class="work__p">Информация о проекте 1 превью 2 строки...</p>
-					</li>
+				<?php require_once 'work-list.php'; ?>
 				</ul>
+
 				<?php if($_SESSION['auth']) { ?>
 				<div class="work__add">
 					<a href="#add-project" class="work__add-a open-popup">
@@ -64,7 +34,7 @@
 							<a href="#" class="close"><span class="icon"></span></a>
 							<span class="popup__title">Добавление проекта</span>
 							<div class="popup__form">
-								<form class="form-validation" method="POST" action="ajax">
+								<form class="form-validation" id="add-project__form">
 									<div class="form-info">
 										<div class="form-info-in form-info-success">
 											<a href="#" class="form-info-close"><span class="icon"></span></a>
@@ -93,7 +63,7 @@
 											</div>
 											<label class="label__file" for="input__file">
 												<span class="icon icon--upload"></span>
-												<input id="input__file" class="input__file" type="file" name="files[]">
+												<input id="input__file" class="input__file" type="file" name="files">
 											</label>
 										</div>
 									</div>

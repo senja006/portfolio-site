@@ -1,4 +1,4 @@
-<?php  
+<?php
 require_once 'config.php';
 
 // Название проекта
@@ -8,9 +8,9 @@ $projectUrl = trim($_POST['projectUrl']);
 // Описание проекта
 $projectDesc = $_POST['text'];
 // Файл с картинкой
-$fileurl = $_POST['fileurl'];
+$fileurl = 'images/content/work/'.$_POST['file-name'];
 $data = array();
-if(empty($projectName) || empty($projectUrl) || empty($projectDesc) || empty($fileurl)) {
+if(empty($projectName) || empty($projectUrl) || empty($projectDesc)) {
 	$data['project_status'] = 'false';
 }else{
 	$pdo = connectToDB();
