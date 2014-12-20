@@ -2,6 +2,7 @@
 	$title = 'Мои работы';
 	$menu_item = 'work';
 	require_once 'header.php';
+	// $data['portfolio'] = getDataAsArray($pdo, $data_sql['getPortfolio']);
 ?>
 <!-- begin content -->
 <div class="content">
@@ -64,7 +65,7 @@
 					<a href="#" class="close"><span class="icon"></span></a>
 					<span class="popup__title">Добавление проекта</span>
 					<div class="popup__form">
-						<form class="form-validation">
+						<form class="form-validation" method="POST" action="ajax">
 							<div class="form-info">
 								<div class="form-info-in form-info-success">
 									<a href="#" class="form-info-close"><span class="icon"></span></a>
@@ -80,7 +81,7 @@
 							<div class="container-input">
 								<span class="span-label">Название проекта</span>
 								<div class="input-wrapper">
-									<input class="input" type="text" name="name" placeholder="Введите название" required />
+									<input class="input" type="text" name="projectName" placeholder="Введите название" required />
 									<div class="tooltip" data-required="введите название"><span class="tooltip__span">введите название</span></div>
 								</div>
 							</div>
@@ -93,21 +94,21 @@
 									</div>
 									<label class="label__file" for="input__file">
 										<span class="icon icon--upload"></span>
-										<input id="input__file" class="input__file" type="file">
+										<input id="input__file" class="input__file" type="file" name="files[]">
 									</label>
 								</div>
 							</div>
 							<div class="container-input">
 								<span class="span-label">URL проекта</span>
 								<div class="input-wrapper">
-									<input class="input" type="text" name="url" placeholder="Добавьте ссылку" required />
+									<input class="input" type="text" name="projectUrl" placeholder="Добавьте ссылку" required />
 									<div class="tooltip" data-no-valid="введите правильный URL" data-required="ссылка на проект"><span class="tooltip__span">ссылка на проект</span></div>
 								</div>
 							</div>
 							<div class="container-input">
 								<span class="span-label">Описание</span>
 								<div class="input-wrapper">
-									<textarea class="textarea" name="desc" placeholder="Пара слов о Вашем проекте" required></textarea>
+									<textarea class="textarea" name="text" placeholder="Пара слов о Вашем проекте" required></textarea>
 									<div class="tooltip" data-required="введите сообщение"><span class="tooltip__span"></span></div>
 								</div>
 							</div>

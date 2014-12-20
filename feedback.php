@@ -15,8 +15,8 @@
 		<!-- begin feedback -->
 		<div class="feedback">
 			<div class="feedback__title"><span class="feedback__title-span">У вас интересный проект? Напишите мне</span></div>
-			<div class="feedback__form">
-				<form class="form-validation" method="POST" action="send-mail.php">
+			<div class="feedback__form-container">
+				<form class="form-validation feedback__form">
 					<div class="form-info">
 						<div class="form-info-in form-info-success">
 							<a href="#" class="form-info-close"><span class="icon"></span></a>

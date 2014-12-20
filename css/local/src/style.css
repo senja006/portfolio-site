@@ -832,11 +832,19 @@ img {
 .copyright__span {
     font-size: 13px;
     color: #4a545d;
-    margin-left: 20px;
 }
 .footer__in {
 	display: inline-block;
 	vertical-align: middle;
+}
+.login {
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.login .icon {
+	cursor: pointer;
 }
 
 /* @end */
@@ -1594,23 +1602,23 @@ img {
     margin-left: 59px;
     vertical-align: middle;
 }
-.feedback__form {
+.feedback__form-container {
     width: 402px;
     margin: 0 auto;
 }
-.feedback__form .container-input {
+.feedback__form-container .container-input {
     display: inline-block;
     vertical-align: top;
 }
-.feedback__form .input--name, .feedback__form .input--email, .feedback__form .input--captcha {
+.feedback__form-container .input--name, .feedback__form-container .input--email, .feedback__form-container .input--captcha {
     width: 192px;
 }
-.feedback__form .textarea {
+.feedback__form-container .textarea {
     width: 402px;
     height: 183px;
     margin-bottom: -4px;
 }
-.feedback__form .container-input--email {
+.feedback__form-container .container-input--email {
     float: right;
 }
 .feedback__form-row {
@@ -1621,7 +1629,7 @@ img {
     clear: both;
     content: '';
 }
-.feedback__form .span-label {
+.feedback__form-container .span-label {
     font-size: 19px;
     margin-bottom: 3px;
 }
@@ -1674,7 +1682,7 @@ img {
     box-sizing: border-box;
     padding: 6px 10px;
 }
-.feedback__form .button--dark {
+.feedback__form-container .button--dark {
     float: right;
 }
 
@@ -1929,27 +1937,27 @@ img {
         border-bottom-width: 22px;
         margin-bottom: 58px;
     }
-    .feedback__form {       
+    .feedback__form-container {       
         width: 455px;
     }
-    .feedback__form .textarea {
+    .feedback__form-container .textarea {
         width: 455px;
     }
-    .feedback__form .input {
+    .feedback__form-container .input {
         width: 210px;
         height: 35px;
     }
-    .feedback__form .span-label {
+    .feedback__form-container .span-label {
         font-size: 22px;
     }
     .feedback__form-row {
         margin-bottom: 14px;
     }
-    .feedback__form .textarea {
+    .feedback__form-container .textarea {
         height: 210px;
         margin-bottom: 25px;
     }
-    .feedback__form .container-input--captcha .span-label {
+    .feedback__form-container .container-input--captcha .span-label {
         font-size: 18px;
         margin-bottom: 13px;
     }
@@ -2419,23 +2427,23 @@ img {
         border-bottom-width: 16px;
         margin-bottom: 13px;
     }
-    .feedback__form {       
+    .feedback__form-container {       
         width: 261px;
     }
-    .feedback__form .input--name, .feedback__form .input--email {
+    .feedback__form-container .input--name, .feedback__form-container .input--email {
 		width: 261px;
     }
-    .feedback__form .input--captcha {
+    .feedback__form-container .input--captcha {
     	width: 113px;
     	height: 28px;
     }
-    .feedback__form .textarea {
+    .feedback__form-container .textarea {
     	width: 261px;
     	height: 99px;
     	margin-bottom: 2px;
     	padding-top: 4px;
     }
-    .feedback__form .span-label {
+    .feedback__form-container .span-label {
     	font-size: 18px;
     	margin-bottom: 6px;
     }
@@ -2444,7 +2452,7 @@ img {
     	font-family: 'FiraSans-Light';
     	margin-bottom: 5px !important;
     }
-    .feedback__form .container-input {
+    .feedback__form-container .container-input {
         margin-bottom: 29px;
     }
     .feedback__form-row {
@@ -2459,7 +2467,7 @@ img {
         height: 73px;
         margin-bottom: 0;
     }
-    .feedback__form .button {
+    .feedback__form-container .button {
     	font-size: 16px;
     	width: 105px;
     	padding: 0;

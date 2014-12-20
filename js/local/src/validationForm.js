@@ -9,11 +9,9 @@ var validationForm = (function() {
 	};
 	var $inputsRequired = null;
 	var $currentForm = null;
-	var sendingProcess = false;
 	var $buttonSubmit = null;
 
 	function addEventListeners() {
-		$('.form-validation').on('submit', controlValidationForm);
 		$('.form-validation').on('focus', '.ui-state-error', hideTooltip);
 		$('.input__file').on('change', addNameFile);
 		$('.form-validation').on('focus', '.input, .textarea', hideFormInfo);
@@ -28,64 +26,6 @@ var validationForm = (function() {
 		addMaskNumbers();
 	};
 
-	function controlValidationForm() {
-		if(sendingProcess) return false;
-		$currentForm = $(this);
-		addSupportRequired();
-		var required = controlCheckRequired();
-		// console.log(required);
-		// var validEmail = checkEmail();
-		if(!required) {
-			// showTooltipRequired();
-			// showTooltipNoValid();
-			return false;
-		}
-		sendForm();
-		return false;
-	};
-
-	function sendForm() {
-		sendingProcess = true;
-		disableButton();
-		var data = $currentForm.serialize();
-		var url = $currentForm.attr('action');
-		var method = $currentForm.attr('method');
-		$.ajax({
-			url: url,
-			type: method,
-			dataType: 'html',
-			data: data,
-			success: function(response) {
-				checkResponse(response);
-				console.log(response);
-				sendingProcess = false;
-				unDisableButton();
-			},
-			error: function(response) {
-				showInfoError();
-				sendingProcess = false;
-				unDisableButton();
-			} ,
-		});
-	};
-
-	function checkResponse(response) {
-		var response = JSON.parse(response);
-		var emailStatus = response['email_status'];
-		var captchaStatus = response['captcha_status'];
-		if(emailStatus === 'false' || captchaStatus === 'false') {
-			if(emailStatus === 'false') resetInput('.input--email');
-			if(captchaStatus === 'false') resetInput('.input--captcha');
-			return false;
-		}
-		var sendStatus = response['send_status'];
-		if(sendStatus) {
-			showInfoSuccess();
-		}else{
-			showInfoError();
-		}
-	};
-
 	function disableButton() {
 		$buttonSubmit = $currentForm.find('input[type=submit]');
 		$buttonSubmit.addClass('is-disabled');
@@ -95,22 +35,27 @@ var validationForm = (function() {
 		$buttonSubmit.removeClass('is-disabled');
 	};
 
-	function resetInput(input) {
-		var val = '';
-		var $input = $currentForm.find(input);
-		$input.val(val);
-		$input.removeClass('ui-state-valid').addClass('ui-state-error');
-		// addSupportRequired();
-		controlCheckRequired();
+	function resetInput(obj) {
+		var $data = obj;
+		var defaultVal = '';
+		for(var key in $data) {
+			console.log(key);
+			if($data[key] === 'reset') {
+				var $input = $currentForm.find(key);
+				$input.val(defaultVal);
+				$input.removeClass('ui-state-valid').addClass('ui-state-error');
+			}
+		}
+		controlCheckRequired($currentForm);
 	};
 
-	function controlCheckRequired() {
+	function controlCheckRequired(form) {
+		console.log(form);
+		$currentForm = form;
+		addSupportRequired();
 		$inputsRequired = $currentForm.find('.ui-state-error');
 		if($inputsRequired.length) {
 			showTooltipRequired();
-			return false;
-		}else{
-			return true;
 		}
 	};
 
@@ -195,11 +140,8 @@ var validationForm = (function() {
 	};
 
 	function addSupportRequired() {
-		var $form = $('.form-validation');
+		var $form = $currentForm || $('.form-validation');
 		$form.h5Validate();
-		// $form.find('textarea').trigger('focus');
-		// $form.find('input').trigger('focus');
-		// $form.find('input').trigger('blur');
 	};
 
 	function hideTooltip() {
@@ -241,7 +183,6 @@ var validationForm = (function() {
 				addSupportRequired();
 				addEventListeners();
 				hideFormInfo();
-				// $(document).scrollTop(0);
 			}
 			if($('form').length && !$('html').hasClass('ie-9') && !$('html').hasClass('ie-8')) {
 				controlAddMask();
@@ -252,6 +193,24 @@ var validationForm = (function() {
 		},
 		hideFormInfo: function() {
 			hideFormInfo();
+		},
+		checkRequired: function(form) {
+			controlCheckRequired(form);
+		},
+		disableButton: function() {
+			disableButton();
+		},
+		unDisableButton: function() {
+			unDisableButton();
+		},
+		showInfoError: function() {
+			showInfoError();
+		},
+		showInfoSuccess: function() {
+			showInfoSuccess();
+		},
+		resetInput: function(obj) {
+			resetInput(obj);
 		},
 	};
 

@@ -8,7 +8,7 @@
 	<div class="admin__in">
 		<div class="admin__title"><span class="admin__title-span">Авторизуйтесь</span></div>
 		<div class="admin__form">
-			<form class="form-validation">
+			<form class="form-validation" method="POST" action="login-server">
 				<div class="container-input">
 					<span class="span-label">Логин</span>
 					<div class="input-wrapper">

@@ -5,5 +5,6 @@ $(document).ready(function() {
 	popup.init(); // popup
 	mobileMenu.init(); // меню для планшетов и мобильников
 	mobileClasses.init(); // определение ширины браузера
+	feedbackForm.init(); // форма обратной связи
 
 });

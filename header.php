@@ -1,5 +1,10 @@
 <?php
 	session_start();
+	require_once 'config.php';
+
+	// подключение к БД
+	$pdo = connectToDB();
+	// $data['portfolio'] = getDataAsArray($pdo, $data_sql['getPortfolio']);
 ?>
 
 <!DOCTYPE html>

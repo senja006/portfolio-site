@@ -43,7 +43,9 @@
 <!-- begin footer -->
 <footer class="footer">
 	<div class="footer__in">
+		<?php if($page_item != 'admin') { ?>
 		<a href="admin.php" class="login"><span class="icon"></span></a>
+		<?php } ?>
 		<div class="copyright">
 			<span class="copyright__span">© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
 		</div>
@@ -58,6 +60,7 @@
 	<script type="text/javascript" src="js/local/src/popup.js"></script>
 	<script type="text/javascript" src="js/local/src/mobileMenu.js"></script>
 	<script type="text/javascript" src="js/local/src/mobileClasses.js"></script>
+	<script type="text/javascript" src="js/local/src/feedbackForm.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
