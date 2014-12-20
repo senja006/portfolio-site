@@ -626,3 +626,37 @@
     width: 11px;
   }
 }
+
+.is-auth .login .icon {
+  background-image: url('../../../images/design/sprite-images-s27fd9679ff.png');
+  background-position: 0 -783px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 20px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .is-auth .login .icon {
+    background-image: url('../../../images/design/sprite-images-2x-s3021b648c4.png');
+    background-size: 52px 1473px;
+    background-position: 0 -716px;
+    height: 17px;
+    width: 11px;
+  }
+}
+
+.is-auth .login:hover .icon {
+  background-image: url('../../../images/design/sprite-images-s27fd9679ff.png');
+  background-position: 0 -825px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 20px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .is-auth .login:hover .icon {
+    background-image: url('../../../images/design/sprite-images-2x-s3021b648c4.png');
+    background-size: 52px 1473px;
+    background-position: 0 -695px;
+    height: 17px;
+    width: 11px;
+  }
+}

@@ -7,9 +7,9 @@ $pdo = connectToDB();
 
 // получаем данные из формы
 $login = htmlspecialchars(strip_tags(trim($_POST['login'])), ENT_QUOTES);
-$password = $_POST['password'];
+$password = $_POST['pass'];
 // делаем запрос на проверку пользователя в БД
-$sql = "SELECT COUNT(users.id) as cnt FROM users WHERE users.login = '{$login}' AND users.password = '{$password}'";
+$sql = "SELECT COUNT(users.id) AS cnt FROM users WHERE users.login = '{$login}' AND users.password = '{$password}'";
 $result = $pdo->query($sql);
 $res = $result->fetch(PDO::FETCH_ASSOC);
 $data = array();

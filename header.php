@@ -29,7 +29,7 @@
 	<![endif]-->
 	<script type="text/javascript" src="js/vendor/src/picturefill.min.js"></script>
 </head>
-<body>
+<body <?php if($_SESSION['auth']) {echo 'class="is-auth"';}  ?>>
 	<!-- begin page  -->
 	<div class="page">
 	<?php 

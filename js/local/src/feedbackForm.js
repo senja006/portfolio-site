@@ -22,7 +22,7 @@ var feedbackForm = (function() {
 		validationForm.disableButton();
 		var data = $form.serialize();
 		$.ajax({
-			url: 'send-mail.php',
+			url: 'send-mail',
 			type: 'POST',
 			dataType: 'html',
 			data: data,

@@ -51,6 +51,7 @@
 						<p class="work__p">Информация о проекте 1 превью 2 строки...</p>
 					</li>
 				</ul>
+				<?php if($_SESSION['auth']) { ?>
 				<div class="work__add">
 					<a href="#add-project" class="work__add-a open-popup">
 						<div class="work__add-a-wrapper">
@@ -58,66 +59,67 @@
 							<span class="work__add-span">Добавить проект</span>
 						</div>
 					</a>
-				</div>
-			</div>
-			<div class="popup" id="add-project">
-				<div class="popup__in">
-					<a href="#" class="close"><span class="icon"></span></a>
-					<span class="popup__title">Добавление проекта</span>
-					<div class="popup__form">
-						<form class="form-validation" method="POST" action="ajax">
-							<div class="form-info">
-								<div class="form-info-in form-info-success">
-									<a href="#" class="form-info-close"><span class="icon"></span></a>
-									<span class="form-info-title">Ура!</span>
-									<span class="form-info-text">Проект успешно добавлен.</span>
-								</div>
-								<div class="form-info-in form-info-error">
-									<a href="#" class="form-info-close"><span class="icon"></span></a>
-									<span class="form-info-title">Ошибка!</span>
-									<span class="form-info-text">Невозможно добавить проект.</span>
-								</div>
-							</div>
-							<div class="container-input">
-								<span class="span-label">Название проекта</span>
-								<div class="input-wrapper">
-									<input class="input" type="text" name="projectName" placeholder="Введите название" required />
-									<div class="tooltip" data-required="введите название"><span class="tooltip__span">введите название</span></div>
-								</div>
-							</div>
-							<div class="container-input">
-								<span class="span-label">Картинка проекта</span>
-								<div class="input-file">
-									<div class="input-wrapper">
-										<input class="input input__file-name" type="text" name="file-name" placeholder="Загрузите изображение" readonly required />
-										<div class="tooltip"data-required="изображение"><span class="tooltip__span">изображение</span></div>
+					<div class="popup" id="add-project">
+						<div class="popup__in">
+							<a href="#" class="close"><span class="icon"></span></a>
+							<span class="popup__title">Добавление проекта</span>
+							<div class="popup__form">
+								<form class="form-validation" method="POST" action="ajax">
+									<div class="form-info">
+										<div class="form-info-in form-info-success">
+											<a href="#" class="form-info-close"><span class="icon"></span></a>
+											<span class="form-info-title">Ура!</span>
+											<span class="form-info-text">Проект успешно добавлен.</span>
+										</div>
+										<div class="form-info-in form-info-error">
+											<a href="#" class="form-info-close"><span class="icon"></span></a>
+											<span class="form-info-title">Ошибка!</span>
+											<span class="form-info-text">Невозможно добавить проект.</span>
+										</div>
 									</div>
-									<label class="label__file" for="input__file">
-										<span class="icon icon--upload"></span>
-										<input id="input__file" class="input__file" type="file" name="files[]">
-									</label>
-								</div>
+									<div class="container-input">
+										<span class="span-label">Название проекта</span>
+										<div class="input-wrapper">
+											<input class="input" type="text" name="projectName" placeholder="Введите название" required />
+											<div class="tooltip" data-required="введите название"><span class="tooltip__span">введите название</span></div>
+										</div>
+									</div>
+									<div class="container-input">
+										<span class="span-label">Картинка проекта</span>
+										<div class="input-file">
+											<div class="input-wrapper">
+												<input class="input input__file-name" type="text" name="file-name" placeholder="Загрузите изображение" readonly required />
+												<div class="tooltip"data-required="изображение"><span class="tooltip__span">изображение</span></div>
+											</div>
+											<label class="label__file" for="input__file">
+												<span class="icon icon--upload"></span>
+												<input id="input__file" class="input__file" type="file" name="files[]">
+											</label>
+										</div>
+									</div>
+									<div class="container-input">
+										<span class="span-label">URL проекта</span>
+										<div class="input-wrapper">
+											<input class="input" type="text" name="projectUrl" placeholder="Добавьте ссылку" required />
+											<div class="tooltip" data-no-valid="введите правильный URL" data-required="ссылка на проект"><span class="tooltip__span">ссылка на проект</span></div>
+										</div>
+									</div>
+									<div class="container-input">
+										<span class="span-label">Описание</span>
+										<div class="input-wrapper">
+											<textarea class="textarea" name="text" placeholder="Пара слов о Вашем проекте" required></textarea>
+											<div class="tooltip" data-required="введите сообщение"><span class="tooltip__span"></span></div>
+										</div>
+									</div>
+									<div class="container-submit">
+										<input class="button" type="submit" value="Добавить">
+									</div>
+								</form>
 							</div>
-							<div class="container-input">
-								<span class="span-label">URL проекта</span>
-								<div class="input-wrapper">
-									<input class="input" type="text" name="projectUrl" placeholder="Добавьте ссылку" required />
-									<div class="tooltip" data-no-valid="введите правильный URL" data-required="ссылка на проект"><span class="tooltip__span">ссылка на проект</span></div>
-								</div>
-							</div>
-							<div class="container-input">
-								<span class="span-label">Описание</span>
-								<div class="input-wrapper">
-									<textarea class="textarea" name="text" placeholder="Пара слов о Вашем проекте" required></textarea>
-									<div class="tooltip" data-required="введите сообщение"><span class="tooltip__span"></span></div>
-								</div>
-							</div>
-							<div class="container-submit">
-								<input class="button" type="submit" value="Добавить">
-							</div>
-						</form>
+						</div>
 					</div>
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 		<!-- end work -->

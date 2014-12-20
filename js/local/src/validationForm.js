@@ -39,7 +39,6 @@ var validationForm = (function() {
 		var $data = obj;
 		var defaultVal = '';
 		for(var key in $data) {
-			console.log(key);
 			if($data[key] === 'reset') {
 				var $input = $currentForm.find(key);
 				$input.val(defaultVal);
@@ -50,7 +49,6 @@ var validationForm = (function() {
 	};
 
 	function controlCheckRequired(form) {
-		console.log(form);
 		$currentForm = form;
 		addSupportRequired();
 		$inputsRequired = $currentForm.find('.ui-state-error');

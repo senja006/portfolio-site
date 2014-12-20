@@ -111,6 +111,12 @@
 .login:hover .icon {
 	@include s(icon-login-open);
 }
+.is-auth .login .icon {
+	@include s(icon-login-open);
+}
+.is-auth  .login:hover .icon {
+	@include s(icon-login);
+}
 
 
 
