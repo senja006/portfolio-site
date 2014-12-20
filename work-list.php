@@ -13,7 +13,7 @@ $portfolio = $result->fetchAll(PDO::FETCH_ASSOC);
 		<img src="<?php echo $item["img"] ?>" width="181" height="127">
 		<div class="work__name"><span class="work__name-span"><?php echo $item["title"] ?></span></div>
 	</div>
-	<a href="#" class="work__a"><?php echo $item["url"] ?></a>
+	<a href="http://<?php echo $item["url"] ?>" target="_blank" class="work__a"><?php echo $item["url"] ?></a>
 	<p class="work__p"><?php echo $item["description"] ?></p>
 </li>
 <?php } ?>
