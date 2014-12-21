@@ -58,7 +58,9 @@
 						<div class="container-input container-input--captcha">
 							<span class="span-label">Введите код, указанный на картинке</span>
 							<div class="captcha">
-								<div class="captcha__img"><img src="captcha.php" /></div>
+								<div class="captcha__img">
+									<img src="captcha.php" />
+								</div>
 								<div class="input-wrapper">
 									<input class="input input--captcha" type="text" name="captcha" placeholder="Введите код" required />
 									<div class="tooltip tooltip--right" data-required="введите код"><span class="tooltip__span"></span></div>

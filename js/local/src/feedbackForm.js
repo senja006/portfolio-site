@@ -51,6 +51,7 @@ var feedbackForm = (function() {
 			}
 			if(captchaStatus === 'false') {
 				$data['.input--captcha'] = 'reset';
+				updateCaptcha();
 			}
 			// console.log($data);
 			validationForm.resetInput($data);
@@ -62,6 +63,11 @@ var feedbackForm = (function() {
 		}else{
 			validationForm.showInfoError();
 		}
+	};
+
+	function updateCaptcha() {
+		var src = 'captcha.php?' + Math.random();
+		$('.captcha__img').find('img').attr('src', src);
 	};
 
 	return {

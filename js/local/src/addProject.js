@@ -3,7 +3,7 @@ var addProject = (function() {
 	var $form = $('#add-project__form');
 	var sendingProcess = false;
 	var files = null;
-	var $data = null;
+	var $data = {};
 
 	function addEventListeners() {
 		$form.on('submit', controlAddProject);
@@ -22,8 +22,8 @@ var addProject = (function() {
 	};
 
 	function addProject() {
-		sendingProcess = true;
-		validationForm.disableButton();
+		// sendingProcess = true;
+		// validationForm.disableButton();
 		var data = $form.serialize();
 		$.ajax({
 			url: 'add-project.php',
@@ -50,6 +50,8 @@ var addProject = (function() {
 	};
 
 	function addFile() {
+		sendingProcess = true;
+		validationForm.disableButton();
 		var data = new FormData();
 		$.each(files, function(key, value) {
 			data.append(key, value);
@@ -66,11 +68,17 @@ var addProject = (function() {
             	if(response['file_status'] === 'true') {
             		addProject();
             	}else{
-            		validationForm.showInfoError();
+            		// validationForm.showInfoError();
+            		$data['.input__file-name'] = 'reset';
+            		validationForm.resetInput($data);
+            		sendingProcess = false;
+					validationForm.unDisableButton();
             	}
             },
             error: function() {
             	validationForm.showInfoError();
+            	sendingProcess = false;
+				validationForm.unDisableButton();
             	console.log('ошибка загрузки');	
             },
         });
