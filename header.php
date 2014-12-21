@@ -8,10 +8,10 @@
 ?>
 
 <!DOCTYPE html>
-<!--[if IE 9]> <html class="ie-9"> <![endif]-->
-<!--[if IE 8]> <html class="ie-8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
-<head lang="ru">
+<!--[if IE 9]> <html lang="ru" class="ie-9"> <![endif]-->
+<!--[if IE 8]> <html lang="ru" class="ie-8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ru"> <!--<![endif]-->
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,25 +69,25 @@
 				<ul class="social__ul">
 					<li class="social__li">
 						<a href="http://vk.com/id130461439" target="_blank" class="social__a social__a--vk">
-							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__front"><span class="icon">Вконтакте</span></div>
 							<div class="social__back"><span class="icon"></span></div>
 						</a>
 					</li>
 					<li class="social__li">
 						<a href="http://twitter.com/senja006" target="_blank" class="social__a social__a--tw">
-							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__front"><span class="icon">Twitter</span></div>
 							<div class="social__back"><span class="icon"></span></div>
 						</a>
 					</li>
 					<li class="social__li">
 						<a href="http://www.facebook.com/profile.php?id=100008555380366" target="_blank" class="social__a social__a--fb">
-							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__front"><span class="icon">Facebook</span></div>
 							<div class="social__back"><span class="icon"></span></div>
 						</a>
 					</li>
 					<li class="social__li">
 						<a href="https://github.com/senja006" target="_blank" class="social__a social__a--git">
-							<div class="social__front"><span class="icon"></span></div>
+							<div class="social__front"><span class="icon">GitHub</span></div>
 							<div class="social__back"><span class="icon"></span></div>
 						</a>
 					</li>
